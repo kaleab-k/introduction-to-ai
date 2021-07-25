@@ -46,13 +46,25 @@ class: middle
 
 ---
 
+
+class: middle
+
+.width-40.center[![](https://i.pinimg.com/originals/4d/72/77/4d727788e093eeb1855d1efce67b8dc2.png)]
+
+.width-20.center[![](https://i.pinimg.com/736x/77/f6/5e/77f65e6b161693dfeb722f3c1b71f301.jpg)]
+
+.width-40.center[![](https://i2.wp.com/1.bp.blogspot.com/-kzqcwGQ4flI/YAkiLUCg1iI/AAAAAAAAEdM/Pl3BHqINiF4rNvajVcs-ChtahZ6DQ9jJwCLcBGAsYHQ/s16000/)]
+
+---
+
 class: middle, center
 
 .width-70[![](figures/lec0/terminator.png)]
 
+"A.I. is far more dangerous than nukes"
 "With artificial intelligence we are summoning the demon" -- Elon Musk
 
-???
+"The development of full artificial intelligence could spell the end of the human race" -- Stephen Hawking
 
 Triggers a rich imagination fueled by science-fiction.
 
@@ -61,8 +73,9 @@ Triggers a rich imagination fueled by science-fiction.
 class: middle, center
 
 .width-60[![](figures/lec0/washing-machine.png)]
+.width-40[![](https://miro.medium.com/max/500/1*pIdFZ54mJqKDhGKmZ-1UdQ.png)]
 
-"We're really closer to a smart washing machine than Terminator" -- Fei-Fei Li, Director of Stanford AI Lab.
+"We're really closer to a smart washing machine than Terminator. If you look at today's AI, we're really very nascent. I am really excited and passionate about AI's potential." -- Fei-Fei Li, Director of Stanford AI Lab.
 
 ???
 
@@ -438,7 +451,37 @@ In this course, Artificial intelligence = **Maximizing expected performance**
 - *Control theory:* homeostatic systems, stability, simple optimal agent designs.
 
 ---
+class: middle
+.center.width-110[![](figures/lec0/history_1.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_2.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_3.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_4.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_5.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_6.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_7.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_8.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_9.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_10.png)]
 
+---
 # A short history of AI
 
 ## 1940-1950: Early days
@@ -498,51 +541,6 @@ class: middle
 - 2012-: Resurgence of neural networks with  deep learning approaches.
 
 ---
-class: middle
-.center.width-150[![](figures/lec0/history_1.png)]
-
----
-
-class: middle
-.center.width-200[![](figures/lec0/history_2.png)]
-
----
-
-class: middle
-.center.width-250[![](figures/lec0/history_3.png)]
-
----
-class: middle
-.center.width-300[![](figures/lec0/history_4.png)]
-
----
-class: middle
-.center.width-100[![](figures/lec0/history_5.png)]
-
----
-
-class: middle
-.center.width-110[![](figures/lec0/history_6.png)]
-
----
-class: middle
-.center.width-90[![](figures/lec0/history_7.png)]
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_8.png)]
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_9.png)]
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_10.png)]
-
----
-
-
 # What can AI do at present?
 
 - Translate spoken Chinese to spoken English, live?
