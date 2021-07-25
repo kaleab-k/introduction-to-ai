@@ -49,9 +49,10 @@ class: middle
 
 class: middle
 
-.width-30[![](https://i.pinimg.com/originals/4d/72/77/4d727788e093eeb1855d1efce67b8dc2.png)]&nbsp;&nbsp;&nbsp;
-.width-20[![](https://i.pinimg.com/736x/77/f6/5e/77f65e6b161693dfeb722f3c1b71f301.jpg)]&nbsp;&nbsp;&nbsp;
-.width-30[![](https://i2.wp.com/1.bp.blogspot.com/-kzqcwGQ4flI/YAkiLUCg1iI/AAAAAAAAEdM/Pl3BHqINiF4rNvajVcs-ChtahZ6DQ9jJwCLcBGAsYHQ/s16000/)]
+.width-45[![](https://i.pinimg.com/originals/4d/72/77/4d727788e093eeb1855d1efce67b8dc2.png)]&nbsp;&nbsp;&nbsp;
+.width-45[![](https://i.pinimg.com/736x/77/f6/5e/77f65e6b161693dfeb722f3c1b71f301.jpg)] <br/>
+.width-45[![](https://i2.wp.com/1.bp.blogspot.com/-kzqcwGQ4flI/YAkiLUCg1iI/AAAAAAAAEdM/Pl3BHqINiF4rNvajVcs-ChtahZ6DQ9jJwCLcBGAsYHQ/s16000/)]&nbsp;&nbsp;&nbsp;
+.width-45[![](https://i.pinimg.com/originals/68/16/30/681630b5d8c403de2a8b71e5e9eaa25a.jpg)]
 
 ---
 
@@ -59,7 +60,7 @@ class: middle, center
 
 .width-70[![](figures/lec0/terminator.png)]
 
-"A.I. is far more dangerous than nukes"
+"A.I. is far more dangerous than nukes" <br/>
 "With artificial intelligence we are summoning the demon" -- Elon Musk
 
 "The development of full artificial intelligence could spell the end of the human race" -- Stephen Hawking
@@ -69,8 +70,8 @@ Triggers a rich imagination fueled by science-fiction.
 ---
 
 class: middle, center
-.width-30[![](figures/lec0/washing-machine.png)]&nbsp;&nbsp;&nbsp;
-.width-40[![](https://miro.medium.com/max/500/1*pIdFZ54mJqKDhGKmZ-1UdQ.png)]
+.width-40[![](figures/lec0/washing-machine.png)]&nbsp;&nbsp;&nbsp;
+.width-55[![](https://miro.medium.com/max/500/1*pIdFZ54mJqKDhGKmZ-1UdQ.png)]
 
 
 "We're really closer to a smart washing machine than Terminator. If you look at today's AI, we're really very nascent. I am really excited and passionate about AI's potential." -- Fei-Fei Li, Director of Stanford AI Lab.
