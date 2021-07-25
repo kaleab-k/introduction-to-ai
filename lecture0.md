@@ -498,60 +498,43 @@ class: middle
 - 2012-: Resurgence of neural networks with  deep learning approaches.
 
 ---
+class: middle
+.center.width-150[![](figures/lec0/history_1.png)]
+
+---
+
+class: middle
+.center.width-200[![](figures/lec0/history_2.png)]
+
+---
+
+class: middle
+.center.width-250[![](figures/lec0/history_3.png)]
 
 ---
 class: middle
-.center.width-80[![](figures/lec0/history_1.png)]
-
----
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_2.png)]
-
----
+.center.width-300[![](figures/lec0/history_4.png)]
 
 ---
 class: middle
-.center.width-80[![](figures/lec0/history_3.png)]
+.center.width-100[![](figures/lec0/history_5.png)]
 
 ---
+
+class: middle
+.center.width-110[![](figures/lec0/history_6.png)]
 
 ---
 class: middle
-.center.width-80[![](figures/lec0/history_4.png)]
-
----
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_5.png)]
-
----
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_6.png)]
-
----
-
----
-class: middle
-.center.width-80[![](figures/lec0/history_7.png)]
-
----
+.center.width-90[![](figures/lec0/history_7.png)]
 
 ---
 class: middle
 .center.width-80[![](figures/lec0/history_8.png)]
 
 ---
-
----
 class: middle
 .center.width-80[![](figures/lec0/history_9.png)]
-
----
 
 ---
 class: middle
