@@ -58,11 +58,14 @@ class: middle
 
 class: middle, center
 
-.width-70[![](figures/lec0/terminator.png)]
+.width-50[![](figures/lec0/terminator.png)]
 
-"A.I. is far more dangerous than nukes" <br/>
 "With artificial intelligence we are summoning the demon" -- Elon Musk
 
+.width-40[![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605f79eaad8970188040f338%2F960x0.jpg%3Ffit%3Dscale)]&nbsp;&nbsp;&nbsp;
+.width-40[![](https://i.pinimg.com/originals/b3/b6/6f/b3b66f29ad734364dc277ce5bc897904.jpg)
+
+"A.I. is far more dangerous than nukes" <br/>
 "The development of full artificial intelligence could spell the end of the human race" -- Stephen Hawking
 
 Triggers a rich imagination fueled by science-fiction.
