@@ -1,18 +1,15 @@
-# INFO8006 - Introduction to Artificial Intelligence
+# Introduction to Artificial Intelligence
 
-Lectures for INFO8006 - Introduction to Artificial Intelligence, ULiège, Fall 2020.
+Lectures for Introduction to Artificial Intelligence.
 
-- Instructor: Gilles Louppe
-- Teaching assistants: Antoine Wehenkel, Arnaud Delaunoy, Pascal Leroy
-- Contact: [info8006@montefiore.ulg.ac.be](mailto:info8006@montefiore.ulg.ac.be)
-- When: Fall 2020, Thursday 8:30 AM to 12:30 AM.
-- Classroom: Virtual. Follow us on [Youtube](https://bit.ly/3igTphO)!
+- Adapted from: INFO8006 - Introduction to Artificial Intelligence, ULiège, Fall 2020.
+
 
 ## Agenda
 
 | Date | Topic |
 | --- | --- |
-| September 17 | [Course syllabus](https://glouppe.github.io/info8006-introduction-to-ai/?p=course-syllabus.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/course-syllabus.pdf)] [[video](https://www.youtube.com/watch?v=XOjc3OtJA4U)]<br>Lecture 0: [Introduction to artificial intelligence](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture0.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec0.pdf)] [[video](https://www.youtube.com/watch?v=G6YrPwF-to8)]<br>Lecture 1: [Intelligent agents](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture1.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec1.pdf)] [[video](https://www.youtube.com/watch?v=WYxZiGIZXSs)]|
+| September 17 | [Course syllabus](https://glouppe.github.io/info8006-introduction-to-ai/?p=course-syllabus.md)<br>Lecture 0: [Introduction to artificial intelligence](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture0.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec0.pdf)] [[video](https://www.youtube.com/watch?v=G6YrPwF-to8)]<br>Lecture 1: [Intelligent agents](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture1.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec1.pdf)] [[video](https://www.youtube.com/watch?v=WYxZiGIZXSs)]|
 | September 24| Lecture 2: [Solving problems by searching](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture2.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec2.pdf)] [[video](https://www.youtube.com/watch?v=9hU3gx79pEE)] <br>Lecture 2b: [Constraint satisfaction problems](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture2b.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec2b.pdf)]  (optional)<br>Q&As (in-person, 11:30 AM, B28/2.93, [registration required](https://docs.google.com/spreadsheets/d/12aKsuN6hfjHR35PRIlWhNn_PVkBh4fvD8YiOfGVHzW4/edit?usp=sharing))<br>Project 1: [Search algorithms](https://github.com/glouppe/info8006-introduction-to-ai/tree/master/projects/project1)<br>Tutorial: [Introduction to Python](https://github.com/glouppe/info8006-introduction-to-ai/tree/master/python-tutorial) [[video (Linux)](https://www.youtube.com/watch?v=aul2ARPn790), [video (Windows)](https://www.youtube.com/watch?v=CWNOHrwzIaM)] |
 | October 1 | Lecture 3: [Games and adversarial search](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture3.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec3.pdf)] [[video](https://www.youtube.com/watch?v=rjCBWMJhKg0)]<br>Exercises 1: Solving problems by searching [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exercises1.pdf)] [[Solutions](https://glouppe.github.io/info8006-introduction-to-ai/pdf/solutions1.pdf)] [[video](https://www.youtube.com/watch?v=fkWYxezUKo8&ab_channel=GillesLouppe)]|
 | October 8 | Lecture 4: [Representing uncertain knowledge](https://glouppe.github.io/info8006-introduction-to-ai/?p=lecture4.md) [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/lec4.pdf)] [[video](https://www.youtube.com/watch?v=i1UqwV3jMIY)]<br>Q&As (in-person, 11:30 AM, B28/2.93, [registration required](https://docs.google.com/spreadsheets/d/12aKsuN6hfjHR35PRIlWhNn_PVkBh4fvD8YiOfGVHzW4/edit?usp=sharing)) <br>Exercises 2: Games and adversarial search [[PDF](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exercises2.pdf)] [[Solutions](https://glouppe.github.io/info8006-introduction-to-ai/pdf/solutions2.pdf)] [[video](https://www.youtube.com/watch?v=0ttKt51GaOw&ab_channel=GillesLouppe)]<br>Project 2: [Adversarial search](https://github.com/glouppe/info8006-introduction-to-ai/tree/master/projects/project2) |
@@ -50,16 +47,3 @@ Your task is to read a major scientific paper in the field of Artificial Intelli
 The reading assignment includes the main text (pages 1-4), as well as the methods section (pages 6-7).
 
 Short questions will be asked as part of the written exam. You do not have to produce any summary report.
-
-## Previous exams
-
-- [January 2019](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exam-january2019.pdf) ([Solutions](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exam-january2019-solutions.pdf))
-- [August 2019](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exam-august2019.pdf)
-- [January 2020](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exam-january2020.pdf)
-- [August 2020](https://glouppe.github.io/info8006-introduction-to-ai/pdf/exam-august2020.pdf)
-
-## Archives
-
-- [2019-2020](https://github.com/glouppe/info8006-introduction-to-ai/tree/info8006-2019)
-- [2018-2019](https://github.com/glouppe/info8006-introduction-to-ai/tree/info8006-2018)
-- [2017-2018](https://github.com/glouppe/info8006-introduction-to-ai/tree/info8006-2017)

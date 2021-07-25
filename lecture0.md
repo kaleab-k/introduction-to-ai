@@ -5,12 +5,10 @@ class: middle, center, title-slide
 Lecture 0: Artificial Intelligence
 
 <br><br>
-Prof. Gilles Louppe<br>
-[g.louppe@uliege.be](mailto:g.louppe@uliege.be)
+Kaleab A. Kinfu<br>
+[kinfu@jhu.edu](mailto:kinfu@jhu.edu)
 
 ???
-
-R: https://www.youtube.com/watch?v=AmjAOiDtzZI
 
 R: https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
 
@@ -20,67 +18,25 @@ R: https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
 
 - Course outline
 - Introduction to Artificial Intelligence
-- Intelligent agents
+- Highlight AI Researcher
 
 ---
 
 # Outline
 
 - Lecture 0: Artificial intelligence
-- Lecture 1: Intelligent agents
-- Lecture 2: Solving problems by searching
-- .inactive[Lecture 2b: Constraint satisfaction problems (optional)]
-- Lecture 3: Adversarial search
-- Lecture 4: Representing uncertain knowledge
-- Lecture 5: Inference in Bayesian networks
-- Lecture 6: Reasoning over time
-- Lecture 7: Learning
-- Lecture 8: Making decisions
-- Lecture 9: Reinforcement learning
-- Lecture 10: Communication 
-- Lecture 11: Artificial General Intelligence and beyond 
-
----
-
-class: middle, center
-
-.width-50[![](figures/lec0/map.jpg)]
-
+- Lecture 1: Machine Learning 
+- Lecture 2: Deep Learning 
+- Lecture 3: Project: Geez Digit Recognizer 
 ---
 
 class: middle
 
 ## My mission
 
-By the end of this course, you will have built autonomous agents that efficiently make decisions in fully informed, partially observable and adversarial settings. Your agents will draw inferences in uncertain and unknown environments and optimize actions for arbitrary reward structures. 
+By the end of this workshop, you will have built a Ge'ez digit recognition system using a Deep-Learning technique. 
 
-The techniques you learn in this course apply to a wide variety of artificial intelligence problems and will serve as the foundation for further study in any application area you choose to pursue.
-
----
-
-class: middle
-
-## Going further
-
-This course is designed as an introduction to the many other courses available at ULiège and (broadly) related to AI, including:
-
-- **INFO8006: Introduction to Artificial Intelligence $\leftarrow$ you are there**
-- ELEN0062: Introduction to Machine Learning
-- INFO8004: Advanced Machine Learning
-- INFO8010: Deep Learning
-- INFO8003: Optimal decision making for complex problems
-- INFO0948: Introduction to Intelligent Robotics
-- INFO0049: Knowledge representation
-- ELEN0016: Computer vision
-- ELEN0060: Information and coding theory
-- MATH2022: Large-sample analysis: theory and practice
-- DROI8031: Introduction to the law of robots
-
-???
-
-Mention pre-requisites:
-- programming experience
-- probability theory
+The ML techniques you learn in this workshop apply to a wide variety of artificial intelligence problems and will serve as the foundation for further study in any application area you choose to pursue.
 
 ---
 
@@ -542,6 +498,67 @@ class: middle
 - 2012-: Resurgence of neural networks with  deep learning approaches.
 
 ---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_1.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_2.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_3.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_4.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_5.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_6.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_7.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_8.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_9.png)]
+
+---
+
+---
+class: middle
+.center.width-80[![](figures/lec0/history_10.png)]
+
+---
+
 
 # What can AI do at present?
 
