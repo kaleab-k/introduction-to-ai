@@ -426,7 +426,7 @@ td {
 
 .title-slide:after {
     content: '';
-    background: url("https://d2v9ipibika81v.cloudfront.net/uploads/sites/79/2016/12/American-Spaces-Sticker-Logo.jpg") no-repeat;
+    background: url("../assets/logo_ulg.png") no-repeat;
     background-size: 100% 100%;
     width: 150px;
     height: 73px;
