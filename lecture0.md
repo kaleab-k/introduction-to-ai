@@ -49,11 +49,11 @@ class: middle
 
 class: middle
 
-.width-40.center[![](https://i.pinimg.com/originals/4d/72/77/4d727788e093eeb1855d1efce67b8dc2.png)]
+.width-40[![](https://i.pinimg.com/originals/4d/72/77/4d727788e093eeb1855d1efce67b8dc2.png)]
 
-.width-20.center[![](https://i.pinimg.com/736x/77/f6/5e/77f65e6b161693dfeb722f3c1b71f301.jpg)]
+.width-20[![](https://i.pinimg.com/736x/77/f6/5e/77f65e6b161693dfeb722f3c1b71f301.jpg)]
 
-.width-40.center[![](https://i2.wp.com/1.bp.blogspot.com/-kzqcwGQ4flI/YAkiLUCg1iI/AAAAAAAAEdM/Pl3BHqINiF4rNvajVcs-ChtahZ6DQ9jJwCLcBGAsYHQ/s16000/)]
+.width-40[![](https://i2.wp.com/1.bp.blogspot.com/-kzqcwGQ4flI/YAkiLUCg1iI/AAAAAAAAEdM/Pl3BHqINiF4rNvajVcs-ChtahZ6DQ9jJwCLcBGAsYHQ/s16000/)]
 
 ---
 
@@ -71,9 +71,9 @@ Triggers a rich imagination fueled by science-fiction.
 ---
 
 class: middle, center
-
-.width-60[![](figures/lec0/washing-machine.png)]
+.width-25[![](figures/lec0/washing-machine.png)]&nbsp;&nbsp;&nbsp;
 .width-40[![](https://miro.medium.com/max/500/1*pIdFZ54mJqKDhGKmZ-1UdQ.png)]
+
 
 "We're really closer to a smart washing machine than Terminator. If you look at today's AI, we're really very nascent. I am really excited and passionate about AI's potential." -- Fei-Fei Li, Director of Stanford AI Lab.
 
