@@ -43,20 +43,18 @@ The ML techniques you will see in this workshop apply to a wide variety of artif
 class: middle
 
 .width-30.circle.center[![http://kaleabalemayehu.com](http://kaleabalemayehu.com/src/img/a.jpeg)]
-
-.italic[*PhD student* at the *[Johns Hopkins University.*] <br/>
-*M.S.E*, *Biomedical Engineering*, .italic[Johns Hopkins University.] <br/>
-*M.Sc*, *Informatique*, .italic[University of Bordeaux.] <br/>
-*M.Sc*, *Image Processing and Computer Vision*, .italic[Autonomous University of Madrid.]<br/>
-*M.Sc*, *Computer Science Engineering*, .italic[Pazmany Peter Catholic University.]<br/>
-*B.Sc*, *Computer Science*, .italic[Addis Ababa University.]<br/>
+.center[.bold[Kaleab A. Kinfu]]
+.italic[**PhD student** at the **Johns Hopkins University.**] <br/>
+*M.S.E*, .italic[Biomedical Engineering], *Johns Hopkins University.* <br/>
+*M.Sc*, .italic[Informatique], *University of Bordeaux.* <br/>
+*M.Sc*, .italic[Image Processing and Computer Vision], *Autonomous University of Madrid.*<br/>
+*M.Sc*, .italic[Computer Science Engineering], *Pazmany Peter Catholic University.*<br/>
+*B.Sc*, .italic[Computer Science], *Addis Ababa University.*<br/>
 <br/>
 *Mentor*, .italic[Emerging African Scholars Mentorship Program.] <br/>
 *Mentor*, .italic[Young African Explorers Programme.]
+
 ???
-
--> No more "intelligence"
-
 ---
 
 
@@ -450,7 +448,7 @@ class: middle
 class: middle
 # AI biases
 ## Why is this happening?
-.center.width-100[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
+.center.width-90[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
 .footnote[Image credits: [The AI Summit](https://theaisummit.com/)]
 
 ---
