@@ -130,33 +130,43 @@ class: middle
 .slide_left.width-110[![](figures/lec0/AI_1.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_1.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_2.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_3.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_4.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_5.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_6.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_7.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_8.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_9.png)]
 ---
 class: middle
+# History of AI
 .slide_left.width-110[![](figures/lec0/history_10.png)]
 
 
