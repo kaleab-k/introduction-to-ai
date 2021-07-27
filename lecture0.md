@@ -422,15 +422,15 @@ class: middle
 
 .center[
 
-.width-65.circle[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/136C8/production/_95506597_mediaitem95506596.jpg)]&nbsp;&nbsp;&nbsp;
-.width-25.circle[![](https://www.bu.edu/law/files/2019/04/joy-buolamwini-gender-shades.jpg)]
+.width-65[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/136C8/production/_95506597_mediaitem95506596.jpg)]&nbsp;&nbsp;&nbsp;
+.width-25[![](https://www.bu.edu/law/files/2019/04/joy-buolamwini-gender-shades.jpg)]
 ]
 ---
 
 class: middle
 # AI biases
 ## Why is this happening?
-.center.width-60[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
+.center.width-100[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
 .footnote[Image credits: [The AI Summit](https://theaisummit.com/)]
 
 ---
@@ -438,7 +438,7 @@ class: middle
 # AI biases
 ## What is the solution?
 ### Diversity, equity, and inclusion: "AI lacks intelligence without different voices"
-.center.width-80[![](https://pbs.twimg.com/media/DXyTjbKXcAATwSX.jpg)]
+.center.width-100[![](https://pbs.twimg.com/media/DXyTjbKXcAATwSX.jpg)]
 
 ---
 
