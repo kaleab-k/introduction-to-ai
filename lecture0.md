@@ -32,11 +32,11 @@ R: https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
 
 class: middle
 
-## My mission
+## Goal
 
 By the end of this workshop, you will have built a Ge'ez digit recognition system using a Deep-Learning technique. 
 
-The ML techniques you learn in this workshop apply to a wide variety of artificial intelligence problems and will serve as the foundation for further study in any application area you choose to pursue.
+The ML techniques you will see in this workshop apply to a wide variety of artificial intelligence problems and will serve as the foundation for further study in any application area you choose to pursue.
 
 ---
 
@@ -44,15 +44,15 @@ class: middle
 
 .width-30.circle.center[![http://kaleabalemayehu.com](http://kaleabalemayehu.com/src/img/a.jpeg)]
 
-.italic[.bold[PhD student at the Johns Hopkins University]] <br/>
-.italic[M.S.E, Biomedical Engineering], Johns Hopkins University.] <br/>
-.italic[M.Sc, Informatique], University of Bordeaux.] <br/>
-.italic[M.Sc, Image Processing and Computer Vision], Autonomous University of Madrid.] <br/>
-.italic[M.Sc, Computer Science Engineering], Pazmany Peter Catholic University.] <br/>
-.italic[B.Sc, Computer Science], Addis Ababa University.] <br/>
+.italic[*PhD student* at the *[Johns Hopkins University.*] <br/>
+*M.S.E*, *Biomedical Engineering*, .italic[Johns Hopkins University.] <br/>
+*M.Sc*, *Informatique*, .italic[University of Bordeaux.] <br/>
+*M.Sc*, *Image Processing and Computer Vision*, .italic[Autonomous University of Madrid.]<br/>
+*M.Sc*, *Computer Science Engineering*, .italic[Pazmany Peter Catholic University.]<br/>
+*B.Sc*, *Computer Science*, .italic[Addis Ababa University.]<br/>
 <br/>
-.italic[Mentor], Emerging African Scholars Mentorship Program. <br/>
-.italic[Mentor], Young African Explorers Programme
+*Mentor*, .italic[Emerging African Scholars Mentorship Program.] <br/>
+*Mentor*, .italic[Young African Explorers Programme.]
 ???
 
 -> No more "intelligence"
