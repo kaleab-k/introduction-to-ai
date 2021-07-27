@@ -457,3 +457,9 @@ td {
     color: white;
     border-top: solid 0px;
 }
+
+.slide_left{
+    display: block;
+    text-align: center;
+    margin-left: -82px;
+}
