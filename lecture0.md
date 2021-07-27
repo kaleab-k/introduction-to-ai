@@ -187,7 +187,7 @@ class: middle
 # Demand for AI
 .slide_left.width-110[![](figures/lec0/AI_demand.png)]
 ---
-class: middle, center, black-slide
+class: middle, center
 # Why should you care?
 
 .width-80[![](https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/what%20the%20future%20of%20work%20will%20mean%20for%20jobs%20skills%20and%20wages/svg_workfuture_v9_ex5_rj.svgz)]
@@ -251,385 +251,6 @@ Artificial intelligence is the science of making machines or programs that:
 Textbook definition(s) from AIMA.
 
 ---
-
-# Acting humanly
-
-## The Turing test
-
-A computer passes the **Turing test** (aka the Imitation Game) if a human operator, after posing some written
-questions, cannot tell whether the written responses come from a person or from
-a computer.
-
-.grid[
-.kol-2-3[
-.width-80.center[<br>![The Turing test](figures/lec0/turing-test.jpg)]
-]
-.kol-1-3.center[
-.width-100.circle[![Alan Turing](figures/lec0/alan-turing.jpg)]
-.caption[Can machines think?<br> (Alan Turing, 1950)]
-]
-]
-
-???
-
-The Turing test is an *operational* definition of intelligence.
-
----
-
-class: middle
-
-An agent would not pass the Turing test without the following **requirements**:
-
-- natural language processing
-- knowledge representation
-- automated reasoning
-- machine learning
-- computer vision (total Turing test)
-- robotics (total Turing test)
-
-Despite being proposed almost 70 years ago, the Turing test is *still relevant*
-today.
-
----
-
-class: middle, center, black-slide
-
-<iframe width="600" height="450" src="https://www.youtube.com/embed/V-M5SVta2uw" frameborder="0" allowfullscreen></iframe>
-
-A conversation with GPT-3 (2020)
-
----
-
-class: middle
-
-## Limitations of the Turing test
-
-The Turing test tends to focus on *human-like errors*, *linguistic tricks*, etc.
-
-However, it seems more important to study the **principles** underlying intelligence than to replicate an exemplar.
-
----
-
-class: middle, center, black-slide
-
-.center.width-80[![](figures/lec0/cargo-plane.jpg)]
-
-Aeronautics is not defined as the field of making machines<br> that fly
-so exactly like pigeons that they can fool even other pigeons.
-
----
-
-# Thinking humanly
-
-## Cognitive science
-
-Study of the *human mind* and its processes.
-- The goal of cognitive science
-  is to form a theory about the structure of the mind, summarized as a comprehensive **computer
-  model**.
-- It includes language, problem-solving, decision-making and perception.
-- A *cognitive architecture* usually follows human-like reasoning and can be used to
-produce testable predictions (time of delays during problem solving, kinds of
-mistakes, learning rates, etc).
-
-???
-
-Grew out of psychology.
-
----
-
-class: middle, center
-
-.width-80[![ACT-R](figures/lec0/soar.jpg)]
-
-The modern SOAR cognitive architecture.
-
-???
-
-The SOAR architecture is both:
-- a theory of cognition
-- a computational implementation of that theory
-
----
-
-class: middle
-
-## Neurobiology and neuroscience
-
-Study of the anatomy and physiology of neural tissue.
-- Neurobiology is concerned with the the *anatomy and physiology of the brain*, from major structures down to neurons and molecules.
-- Neuroscience adds to that the study of **how the brain works**, mechanistically, functionally, and systematically to produce observable behavior.
-
-.center.width-70[![](figures/lec0/latent.png)]
-
-.footnote[Image credits: M et al. 2018.]
-
-???
-
-Grew out of clinical neurology and neurobiology.
-
----
-
-class: middle
-
-## Limitations of cognition and neuroscience for AI
-
-.grid[
-.kol-2-3[
-- In linguistics, the argument of **poverty of the stimulus** states that children
-do not receive sufficient input to generalize grammatical rules through
-linguistic input alone.
-    - A baby hears too few sentences to deduce the grammar of English before he speaks correctly.
-
-- (Controversial) Therefore, humans must be *biologically pre-wired*
-with **innate knowledge** for representing language.
-]
-.kol-1-3.center[
-.circle.width-100[![Noam Chomsky](figures/lec0/chomsky.png)]
-.caption[How do we know what we know? (Noam Chomsky, 1980)]
-]
-]
-
-Therefore, it may not be possible to implement a fully functioning
-computer model of the human mind without background knowledge of some sort.
-
-???
-
-This is a huge technical **obstacle**, as accessing
-this knowledge would require reverse-engineering the brain.
-
-<=> How do we initialize a computer model of the brain?
-
----
-
-# Thinking rationally
-
-## The logical approach
-
-- The rational thinking approach is concerned with the study of *irrefutable
-reasoning processes*. It ensures that all actions performed by a computer are
-formally **provable** from inputs and prior knowledge.
-
-- The "laws of thought" were supposed to govern the operation of the mind.
-Their study initiated the field of *logic* and the *logicist tradition* of AI
-(1960-1990).
-
-
-
----
-
-class: middle
-
-## Who owns the zebra?
-
-.grid[
-.kol-1-2[
-- There are five houses.
-- The English man lives in the red house.
-- The Swede has a dog.
-- The Dane drinks tea.
-- The green house is immediately to the left of the white house.
-- They drink coffee in the green house.
-- The man who smokes Pall Mall has birds.
-- In the yellow house they smoke Dunhill.
-- In the middle house they drink milk.
-]
-.kol-1-2[
-- The Norwegian lives in the first house.
-- The man who smokes Blend lives in the house next to the house with cats.
-- In a house next to the house where they have a horse, they smoke Dunhill.
-- The man who smokes Blue Master drinks beer.
-- The German smokes Prince.
-- The Norwegian lives next to the blue house.
-- They drink water in a house next to the house where they smoke Blend.
-]
-]
-
----
-
-class: middle, smaller
-
-```prolog
-select([A|As],S):- select(A,S,S1),select(As,S1).
-select([],_).
-
-next_to(A,B,C):- left_of(A,B,C) ; left_of(B,A,C).
-left_of(A,B,C):- append(_,[A,B|_],C).
-
-zebra(Owns, HS):-  % color,nation,pet,drink,smokes
-      HS =    [ h(_,norwegian,_,_,_), _,  h(_,_,_,milk,_), _, _],
-      select( [ h(red,englishman,_,_,_),  h(_,swede,dog,_,_),
-                h(_,dane,_,tea,_),        h(_,german,_,_,prince) ], HS),
-      select( [ h(_,_,birds,_,pallmall),  h(yellow,_,_,_,dunhill),
-                h(_,_,_,beer,bluemaster) ],                         HS),
-      left_of(  h(green,_,_,coffee,_),    h(white,_,_,_,_),         HS),
-      next_to(  h(_,_,_,_,dunhill),       h(_,_,horse,_,_),         HS),
-      next_to(  h(_,_,_,_,blend),         h(_,_,cats, _,_),         HS),
-      next_to(  h(_,_,_,_,blend),         h(_,_,_,water,_),         HS),
-      next_to(  h(_,norwegian,_,_,_),     h(blue,_,_,_,_),          HS),
-      member(   h(_,Owns,zebra,_,_), HS).
-
-:- ?- time(( zebra(Who, HS), maplist(writeln,HS), nl, write(Who), nl, nl, fail
-             ; write('No more solutions.') )).
-
-h(yellow,norwegian, cats,  water, dunhill)
-h(blue,  dane,      horse, tea,   blend)
-h(red,   englishman,birds, milk,  pallmall)
-h(green, german,    zebra, coffee,prince)
-h(white, swede,     dog,   beer,  bluemaster)
-
-german
-```
-
----
-
-class: middle
-
-## Limitations of logical inference
-
-- Representation of *informal* knowledge is difficult.
-- Hard to define provable *plausible* reasoning.
-- Combinatorial **explosion** (in time and space).
-- Logical inference is only a part of intelligence. It does not cover everything:
-    - e.g., might be no provably correct thing to do, but still something must be done;
-    - e.g., reflex actions can be more successful than slower carefully deliberated ones.
-
-.center[![Pain withdrawal reflex](figures/lec0/reflex.jpg)]
-.caption[Pain withdrawal reflexes do not involve inference.]
-
----
-
-# Acting rationally
-
-A **rational agent** acts so as to achieve the *best expected* outcome.
-- Correct logical inference is just one of several possible mechanisms for achieving this goal.
-- Perfect rationality cannot be achieved due to computational limitations!
-  - The amount of reasoning is adjusted according to available resources and importance of the result.
-- The brain is good at making rational decisions but not perfect either.
-
----
-
-class: middle
-
-Rationality only concerns *what* decisions are made (not the thought process behind them, human-like or not).
-
-Goals are expressed in terms of the **performance** or **utility** of outcomes. Being rational means maximizing its expected performance.
-The standard of rationality is general and mathematically well defined.
-
----
-
-class: middle
-
-.center[![](figures/lec0/max-utility.png)
-
-In this course, Artificial intelligence = **Maximizing expected performance**
-]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
-# AI prehistory
-
-- *Philosophy:* logic, methods of reasoning, mind as physical system, foundations of learning, language, rationality.
-- *Mathematics:* formal representation and proof, algorithms, computation, (un)decidability, (in)tractability, probability.
-- *Psychology:* adaptation, phenomena of perception and motor control, psychophysics.
-- *Economics:* formal theory of rational decisions.
-- *Linguistics:* knowledge representation, grammar.
-- *Neuroscience:* plastic physical substrate for mental activity.
-- *Control theory:* homeostatic systems, stability, simple optimal agent designs.
-
----
-class: middle
-.center.width-110[![](figures/lec0/history_1.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_2.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_3.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_4.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_5.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_6.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_7.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_8.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_9.png)]
----
-class: middle
-.center.width-110[![](figures/lec0/history_10.png)]
-
----
-# A short history of AI
-
-## 1940-1950: Early days
-- 1943: McCulloch and Pitts: Boolean circuit model of the brain.
-- 1950: Turing's "Computing machinery and intelligence".
-
-
----
-
-class: middle
-
-## 1950-1970: Excitement and expectations
-- 1950s: Early AI programs, including Samuel's checkers program,
-Newell and Simon's Logic Theorist and Gelernter's Geometry Engine.
-- 1956: Dartmouth meeting: "Aritificial Intelligence" adopted.
-- 1958: Rosenblatt invents the perceptron.
-- 1965: Robinson's complete algorithm for logical reasoning.
-- 1966-1974: AI discovers computational complexity.
-
----
-
-class: middle
-
-.width-60.center[![](figures/lec0/dartmouth.jpg)]
-
-## The Darthmouth workshop (1956)
-
-.italic[The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be *so precisely described* that a machine can be made to simulate it.]
-
----
-
-class: middle, center, black-slide
-
-<iframe width="600" height="450" src="https://www.youtube.com/embed/aygSMgK3BEM" frameborder="0" allowfullscreen></iframe>
-
----
-
-class: middle
-
-## 1970-1990: Knowledge-based approaches
-- 1969: Neural network research almost disappears after Minsky and Papert's book.
-- 1969-1979: Early development of knowledge-based systems.
-- 1980-1988: Expert systems industrial boom.
-- 1988-1993: Expert systems industry busts  (AI winter).
-
----
-
-class: middle
-
-## 1990-Present: Statistical approaches
-- 1985-1995: The return of neural networks.
-- 1988-: Resurgence of probability, focus on uncertainty, general increase in technical depth.
-- 1995-2010: New fade of neural networks.
-- 1995-: Complete intelligent agents and learning systems.
-- 2000-: Availability of very large datasets.
-- 2010-: Availability of fast commodity hardware (GPUs).
-- 2012-: Resurgence of neural networks with  deep learning approaches.
-
----
 # What can AI do at present?
 
 - Translate spoken Chinese to spoken English, live?
@@ -681,9 +302,9 @@ Beat the best human Go players (2016)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/eHipy_j29Xw" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/NlpS-DhayQA" frameborder="0" allowfullscreen></iframe>
 
-Beat teams of human players at real-time strategy games (Dota 2) (2018)
+Solving impactful and challenging problems
 
 ---
 
@@ -757,23 +378,6 @@ Compose music (NVIDIA, 2017)
 
 ---
 
-class: middle, center, black-slide
-
-<iframe width="600" height="450" src="https://www.youtube.com/embed/hYZM5l0G28I" frameborder="0" allowfullscreen></iframe>
-
-Learning to sort waste, before training <br>(Norman Marlier, ULiège, 2018)
-
----
-
-count: false
-class: middle, center, black-slide
-
-<iframe width="600" height="450" src="https://www.youtube.com/embed/MsuS0gaSHJ0" frameborder="0" allowfullscreen></iframe>
-
-Learning to sort waste, after training <br>(Norman Marlier, ULiège, 2018)
-
----
-
 # What is missing?
 
 Intelligence is not just about **pattern recognition**, which is something most of these works are based on.
@@ -783,6 +387,40 @@ It is about *modeling the world*:
 - imagining things we could see but haven't yet;
 - problem solving and planning actions to make these things real;
 - building new models as we learn more about the world.
+
+---
+class: middle
+# AI biases
+## Twitter's Photo Cropping Algorithm Draws Heat for Possible Racial Bias
+.center.width-100[![](https://petapixel.com/assets/uploads/2020/09/comparison_feat.jpg)]
+---
+class: middle
+# AI biases
+## Israel Arrests Palestinian Because Facebook Translated 'Good Morning' to 'Attack Them'
+.center.width-100[![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-ZP_1DWT-8TsEQytJckDR3iBoWNxvLDlmw&usqp=CAU)]
+---
+class: middle
+# AI biases
+## Only white babies appear in a search for "babies" on Microsoft search engine Bing.
+.center.width-100[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/35D4/production/_95508731_mediaitem95508730.jpg)]
+---
+class: middle
+# AI biases
+## Google Mistakenly Tags Black People as ‘Gorillas.’
+.center.width-100[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/BC13/production/_83974184_29ba8607-9446-4298-9d9e-d33514811487.jpg)]
+---
+class: middle
+# AI biases
+## Joy Buolamwini found her computer system recognised the white mask, but not her face.
+.center.width-60[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/136C8/production/_95506597_mediaitem95506596.jpg)]&amp;&amp;&amp;
+.center.width-20[![](https://www.bu.edu/law/files/2019/04/joy-buolamwini-gender-shades.jpg)]
+---
+
+class: middle
+# AI biases
+## Why is this happening?
+.center.width-60[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
+.footnote[Image credits: [The AI Summit](https://theaisummit.com/)]
 
 ---
 
