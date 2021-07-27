@@ -141,7 +141,7 @@ class: middle
 .slide_left.width-110[![](figures/lec0/AI_1.png)]
 ---
 class: middle
-.slide_left.width-110[![](figures/lec0/history_1.png)]
+.slide_left.width-110[![](figures/lec0/AI_0.png)]
 ---
 class: middle
 .slide_left.width-110[![](figures/lec0/history_2.png)]
