@@ -136,40 +136,38 @@ class: middle, center, black-slide
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_0.png)]
 ---
----
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_1.png)]
 ---
-
 class: middle
 .slide_left.width-110[![](figures/lec0/history_1.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_2.png)]
+.slide_left.width-110[![](figures/lec0/history_2.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_3.png)]
+.slide_left.width-110[![](figures/lec0/history_3.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_4.png)]
+.slide_left.width-110[![](figures/lec0/history_4.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_5.png)]
+.slide_left.width-110[![](figures/lec0/history_5.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_6.png)]
+.slide_left.width-110[![](figures/lec0/history_6.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_7.png)]
+.slide_left.width-110[![](figures/lec0/history_7.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_8.png)]
+.slide_left.width-110[![](figures/lec0/history_8.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_9.png)]
+.slide_left.width-110[![](figures/lec0/history_9.png)]
 ---
 class: middle
-.center.width-110[![](figures/lec0/history_10.png)]
+.slide_left.width-110[![](figures/lec0/history_10.png)]
 
 ---
 
