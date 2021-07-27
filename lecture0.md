@@ -133,6 +133,7 @@ class: middle, center, black-slide
 <iframe frameborder="0" width="600" height="480" src="https://www.dailymotion.com/embed/video/x7kvtfn" allowfullscreen allow="autoplay"></iframe>
 
 ---
+
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_0.png)]
 ---
