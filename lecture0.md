@@ -62,11 +62,8 @@ class: middle, center
 
 "With artificial intelligence we are summoning the demon" -- Elon Musk
 
-.width-40[![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605f79eaad8970188040f338%2F960x0.jpg%3Ffit%3Dscale)]&nbsp;&nbsp;&nbsp;
-.width-40[![](https://i.pinimg.com/originals/b3/b6/6f/b3b66f29ad734364dc277ce5bc897904.jpg)]
-
-"A.I. is far more dangerous than nukes" <br/>
-"The development of full artificial intelligence could spell the end of the human race" -- Stephen Hawking
+.width-45[![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F605f79eaad8970188040f338%2F960x0.jpg%3Ffit%3Dscale)]&nbsp;&nbsp;&nbsp;
+.width-50[![](https://i.pinimg.com/originals/b3/b6/6f/b3b66f29ad734364dc277ce5bc897904.jpg)]
 
 Triggers a rich imagination fueled by science-fiction.
 
@@ -82,6 +79,11 @@ class: middle, center
 ???
 
 The reality is quite different...
+
+---
+class: middle
+
+.width-80[![](https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/what%20the%20future%20of%20work%20will%20mean%20for%20jobs%20skills%20and%20wages/svg_workfuture_v9_ex5_rj.svgz)]
 
 ---
 
@@ -129,6 +131,45 @@ sciences to aim at moving targets." -- Marvin Minsky]
 class: middle, center, black-slide
 
 <iframe frameborder="0" width="600" height="480" src="https://www.dailymotion.com/embed/video/x7kvtfn" allowfullscreen allow="autoplay"></iframe>
+
+---
+class: left
+.left.width-110[![](figures/lec0/AI_0.png)]
+---
+---
+class: left
+.left.width-110[![](figures/lec0/AI_1.png)]
+---
+
+class: middle
+.center.width-110[![](figures/lec0/history_1.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_2.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_3.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_4.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_5.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_6.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_7.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_8.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_9.png)]
+---
+class: middle
+.center.width-110[![](figures/lec0/history_10.png)]
 
 ---
 
