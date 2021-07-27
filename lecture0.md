@@ -166,42 +166,49 @@ class: middle
 
 
 ---
-# Types of AI
 class: middle
+# Types of AI
 .slide_left.width-110[![](figures/lec0/ANI.png)]
 ---
-# Types of AI
 class: middle
+# Types of AI
 .slide_left.width-110[![](figures/lec0/AGI.png)]
 ---
-# Types of AI
 class: middle
+# Types of AI
 .slide_left.width-110[![](figures/lec0/ASI.png)]
 ---
+# Demand for AI
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_demand.png)]
 ---
 # Why should you care?
 class: middle, center, black-slide
 
-<iframe frameborder="0" width="600" height="480" src="https://www.dailymotion.com/embed/video/x7kvtfn" allowfullscreen allow="autoplay"></iframe>
+
 ---
 class: middle
+# Domains of AI
 .slide_left.width-110[![](figures/lec0/AI_domain.png)]
 ---
 class: middle
+# Machine Learning
 .slide_left.width-110[![](figures/lec0/ML.png)]
 ---
 class: middle
+# Machine Learning
 .slide_left.width-110[![](figures/lec0/ML_features.png)]
 ---
 class: middle
+# Need for Machine Learning
 .slide_left.width-110[![](figures/lec0/ML_need_1.png)]
 ---
 class: middle
+# Need for Machine Learning
 .slide_left.width-110[![](figures/lec0/ML_need_0.png)]
 ---
 class: middle
+# Programming Languages for AI
 .slide_left.width-110[![](figures/lec0/AI_prog.png)]
 ---
 
