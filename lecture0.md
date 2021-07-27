@@ -318,6 +318,13 @@ Playing soccer (2018)
 
 class: middle, center, black-slide
 
+<iframe width="600" height="450" src="https://www.youtube.com/embed/V-M5SVta2uw" frameborder="0" allowfullscreen></iframe>
+
+A conversation with GPT-3 (2020)
+
+---
+class: middle, center, black-slide
+
 <iframe width="600" height="450" src="https://www.youtube.com/embed/gn4nRCC9TwQ" frameborder="0" allowfullscreen></iframe>
 
 Learning to walk (2017)
