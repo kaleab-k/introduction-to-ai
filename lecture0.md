@@ -126,6 +126,38 @@ sciences to aim at moving targets." -- Marvin Minsky]
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_0.png)]
 ---
+
+# A definition?
+
+Artificial intelligence is the science of making machines or programs that:
+.center.grid[
+.kol-1-4[]
+.kol-1-4[
+.caption[Think like people]
+.width-100[![](figures/lec0/ai-think-people.png)]
+]
+.kol-1-4[
+.caption[Think rationally]
+.width-100[![](figures/lec0/ai-think-rationally.png)]]
+]
+.grid[
+.kol-1-4[]
+.kol-1-4[
+.caption[Act like people]
+.width-100[![](figures/lec0/ai-act-people.png)]
+]
+.kol-1-4[
+.caption[Act rationally]
+.width-100[![](figures/lec0/ai-act-rationally.png)]
+]
+]
+
+.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+???
+
+Textbook definition(s) from AIMA.
+---
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_1.png)]
 ---
@@ -217,38 +249,6 @@ class: middle
 class: middle
 # Programming Languages for AI
 .slide_left.width-110[![](figures/lec0/AI_prog.png)]
----
-
-# A definition?
-
-Artificial intelligence is the science of making machines or programs that:
-.center.grid[
-.kol-1-4[]
-.kol-1-4[
-.caption[Think like people]
-.width-100[![](figures/lec0/ai-think-people.png)]
-]
-.kol-1-4[
-.caption[Think rationally]
-.width-100[![](figures/lec0/ai-think-rationally.png)]]
-]
-.grid[
-.kol-1-4[]
-.kol-1-4[
-.caption[Act like people]
-.width-100[![](figures/lec0/ai-act-people.png)]
-]
-.kol-1-4[
-.caption[Act rationally]
-.width-100[![](figures/lec0/ai-act-rationally.png)]
-]
-]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
-???
-
-Textbook definition(s) from AIMA.
 
 ---
 # What can AI do at present?
@@ -397,7 +397,7 @@ It is about *modeling the world*:
 
 ---
 class: middle
-# AI biases
+# AI biases: our present racial biases are being coded into the technology of the future
 ## Twitter's Photo Cropping Algorithm Draws Heat for Possible Racial Bias
 .center.width-100[![](https://petapixel.com/assets/uploads/2020/09/comparison_feat.jpg)]
 ---
@@ -419,8 +419,12 @@ class: middle
 class: middle
 # AI biases
 ## Joy Buolamwini found her computer system recognised the white mask, but not her face.
-.center.width-60[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/136C8/production/_95506597_mediaitem95506596.jpg)]&amp;&amp;&amp;
-.center.width-20[![](https://www.bu.edu/law/files/2019/04/joy-buolamwini-gender-shades.jpg)]
+
+.center[
+
+.width-65.circle[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/136C8/production/_95506597_mediaitem95506596.jpg)]&nbsp;&nbsp;&nbsp;
+.width-25.circle[![](https://www.bu.edu/law/files/2019/04/joy-buolamwini-gender-shades.jpg)]
+]
 ---
 
 class: middle
@@ -428,6 +432,13 @@ class: middle
 ## Why is this happening?
 .center.width-60[![](https://theaisummit.com/wp-content/uploads/2018/09/IMG_3609-1024x683.jpg)]
 .footnote[Image credits: [The AI Summit](https://theaisummit.com/)]
+
+---
+class: middle
+# AI biases
+## What is the solution?
+### Diversity, equity, and inclusion: "AI lacks intelligence without different voices"
+.center.width-80[![](https://pbs.twimg.com/media/DXyTjbKXcAATwSX.jpg)]
 
 ---
 
