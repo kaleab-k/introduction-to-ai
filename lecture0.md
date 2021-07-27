@@ -42,6 +42,26 @@ The ML techniques you learn in this workshop apply to a wide variety of artifici
 
 class: middle
 
+.width-30.circle.center[![http://kaleabalemayehu.com](http://kaleabalemayehu.com/src/img/a.jpeg)]
+
+.italic[.bold[PhD student at the Johns Hopkins University]] <br/>
+.italic[M.S.E, Biomedical Engineering], Johns Hopkins University.] <br/>
+.italic[M.Sc, Informatique], University of Bordeaux.] <br/>
+.italic[M.Sc, Image Processing and Computer Vision], Autonomous University of Madrid.] <br/>
+.italic[M.Sc, Computer Science Engineering], Pazmany Peter Catholic University.] <br/>
+.italic[B.Sc, Computer Science], Addis Ababa University.] <br/>
+<br/>
+.italic[Mentor], Emerging African Scholars Mentorship Program. <br/>
+.italic[Mentor], Young African Explorers Programme
+???
+
+-> No more "intelligence"
+
+---
+
+
+class: middle
+
 # Artificial intelligence
 
 ---
