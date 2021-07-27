@@ -43,7 +43,7 @@ The ML techniques you will see in this workshop apply to a wide variety of artif
 class: middle
 
 .width-30.circle.center[![http://kaleabalemayehu.com](http://kaleabalemayehu.com/src/img/a.jpeg)]
-.center[.bold[Kaleab A. Kinfu]]
+.center[.bold[Kaleab A. Kinfu]] <br/>
 .italic[**PhD student** at the **Johns Hopkins University.**] <br/>
 *M.S.E*, .italic[Biomedical Engineering], *Johns Hopkins University.* <br/>
 *M.Sc*, .italic[Informatique], *University of Bordeaux.* <br/>
