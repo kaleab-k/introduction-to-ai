@@ -128,12 +128,6 @@ sciences to aim at moving targets." -- Marvin Minsky]
 
 ---
 
-class: middle, center, black-slide
-
-<iframe frameborder="0" width="600" height="480" src="https://www.dailymotion.com/embed/video/x7kvtfn" allowfullscreen allow="autoplay"></iframe>
-
----
-
 class: middle
 .slide_left.width-110[![](figures/lec0/AI_0.png)]
 ---
@@ -141,7 +135,7 @@ class: middle
 .slide_left.width-110[![](figures/lec0/AI_1.png)]
 ---
 class: middle
-.slide_left.width-110[![](figures/lec0/AI_0.png)]
+.slide_left.width-110[![](figures/lec0/history_1.png)]
 ---
 class: middle
 .slide_left.width-110[![](figures/lec0/history_2.png)]
@@ -170,6 +164,45 @@ class: middle
 class: middle
 .slide_left.width-110[![](figures/lec0/history_10.png)]
 
+
+---
+# Types of AI
+class: middle
+.slide_left.width-110[![](figures/lec0/ANI.png)]
+---
+# Types of AI
+class: middle
+.slide_left.width-110[![](figures/lec0/AGI.png)]
+---
+# Types of AI
+class: middle
+.slide_left.width-110[![](figures/lec0/ASI.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/AI_demand.png)]
+---
+# Why should you care?
+class: middle, center, black-slide
+
+<iframe frameborder="0" width="600" height="480" src="https://www.dailymotion.com/embed/video/x7kvtfn" allowfullscreen allow="autoplay"></iframe>
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/AI_domain.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/ML.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/ML_features.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/ML_need_1.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/ML_need_0.png)]
+---
+class: middle
+.slide_left.width-110[![](figures/lec0/AI_prog.png)]
 ---
 
 # A definition?
