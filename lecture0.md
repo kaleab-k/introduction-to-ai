@@ -81,11 +81,6 @@ class: middle, center
 The reality is quite different...
 
 ---
-class: middle
-
-.width-80[![](https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/what%20the%20future%20of%20work%20will%20mean%20for%20jobs%20skills%20and%20wages/svg_workfuture_v9_ex5_rj.svgz)]
-
----
 
 class: middle
 
@@ -178,18 +173,20 @@ class: middle
 # Types of AI
 .slide_left.width-110[![](figures/lec0/ASI.png)]
 ---
-# Demand for AI
 class: middle
+# Demand for AI
 .slide_left.width-110[![](figures/lec0/AI_demand.png)]
 ---
-# Why should you care?
 class: middle, center, black-slide
+# Why should you care?
+
+.width-80[![](https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/what%20the%20future%20of%20work%20will%20mean%20for%20jobs%20skills%20and%20wages/svg_workfuture_v9_ex5_rj.svgz)]
 
 
 ---
 class: middle
 # Domains of AI
-.slide_left.width-110[![](figures/lec0/AI_domain.png)]
+.slide_left.width-110[![](figures/lec0/AI_domains.png)]
 ---
 class: middle
 # Machine Learning
