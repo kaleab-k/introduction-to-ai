@@ -472,28 +472,29 @@ It is about *modeling the world*:
 
 ---
 class: middle
-# AI biases: our present racial biases are being coded into the technology of the future
-## Twitter's Photo Cropping Algorithm Draws Heat for Possible Racial Bias
+# AI biases
+## *Our present racial biases are being coded into the technology of the future :(*
+## > Twitter's Photo Cropping Algorithm Draws Heat for Possible Racial Bias
 .center.width-100[![](https://petapixel.com/assets/uploads/2020/09/comparison_feat.jpg)]
 ---
 class: middle
 # AI biases
-## Israel Arrests Palestinian Because Facebook Translated 'Good Morning' to 'Attack Them'
+## > Israel Arrests Palestinian Because Facebook Translated 'Good Morning' to 'Attack Them'
 .center.width-100[![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-ZP_1DWT-8TsEQytJckDR3iBoWNxvLDlmw&usqp=CAU)]
 ---
 class: middle
 # AI biases
-## Only white babies appear in a search for "babies" on Microsoft search engine Bing.
+## > Only white babies appear in a search for "babies" on Microsoft search engine Bing.
 .center.width-100[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/35D4/production/_95508731_mediaitem95508730.jpg)]
 ---
 class: middle
 # AI biases
-## Google Mistakenly Tags Black People as ‘Gorillas.’
+## > Google Mistakenly Tags Black People as ‘Gorillas.’
 .center.width-100[![](https://ichef.bbci.co.uk/news/976/cpsprodpb/BC13/production/_83974184_29ba8607-9446-4298-9d9e-d33514811487.jpg)]
 ---
 class: middle
 # AI biases
-## Joy Buolamwini found her computer system recognised the white mask, but not her face.
+## > Joy Buolamwini found her computer system recognised the white mask, but not her face.
 
 .center[
 
