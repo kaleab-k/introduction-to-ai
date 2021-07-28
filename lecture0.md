@@ -44,7 +44,7 @@ class: middle
 
 .width-30.circle.center[![http://kaleabalemayehu.com](http://kaleabalemayehu.com/src/img/a.jpeg)]
 .center[.bold[Kaleab Alemayehu Kinfu]] <br/>
-.italic[**PhD student** at the **Johns Hopkins University.**] <br/>
+.italic[**Ph.D. student** at the **Johns Hopkins University.**] <br/>
 *M.S.E*, .italic[Biomedical Engineering], *Johns Hopkins University.* <br/>
 *M.Sc*, .italic[Informatique], *University of Bordeaux.* <br/>
 *M.Sc*, .italic[Image Processing and Computer Vision], *Autonomous University of Madrid.*<br/>
@@ -61,6 +61,7 @@ class: middle
 class: middle
 
 # Artificial intelligence
+![](figures/lec0/Intro_Video.mp4)
 
 ---
 
