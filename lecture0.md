@@ -38,7 +38,7 @@ By the end of this workshop, you will have built a Ge'ez digit recognition syste
 
 The ML techniques you will see in this workshop apply to a wide variety of artificial intelligence problems and will serve as the foundation for further study in any application area you choose to pursue.
 
-.width-80.center[![](figure/lec0/geez_mnist.png)]
+.width-60.center[![](figures/lec0/geez_mnist.png)]
 
 ---
 
@@ -63,7 +63,10 @@ class: middle
 class: middle
 
 # Artificial intelligence
-![](figures/lec0/Intro_Video.mp4)
+<!-- ![](figures/lec0/Intro_Video.mp4) -->
+<video width="768" height="768" controls>
+  <source src="figures/lec0/Intro_Video.mp4" type="video/mp4">
+</video>
 
 ---
 
