@@ -254,6 +254,56 @@ class: middle, center
 class: middle
 # Domains of AI
 .slide_left.width-110[![](figures/lec0/AI_domains.png)]
+
+---
+
+class: middle
+# Machine Learning
+
+.center[
+.width-40[![](figures/lec7/cat.jpg)] &nbsp; &nbsp;
+.width-40[![](figures/lec7/dog.jpg)]
+]
+
+.exercise[How would you write a computer program that recognizes cats from dogs?]
+
+---
+
+class: middle
+
+.center.width-60[![](figures/lec7/cat1.png)]
+
+---
+
+count: false
+class: black-slide, middle
+
+.center.width-50[![](figures/lec7/cat2.png)]
+
+.center[The good old-fashioned approach.]
+
+---
+
+count: false
+class: black-slide, middle
+
+.center.width-80[![](figures/lec7/cat3.png)]
+
+---
+
+count: false
+class: black-slide, middle
+
+.center.width-80[![](figures/lec7/cat4.png)]
+
+---
+
+class: middle
+
+.center.width-100[![](figures/lec7/catordog-flow.gif)]
+
+.center[The deep learning approach.]
+
 ---
 class: middle
 # Machine Learning
