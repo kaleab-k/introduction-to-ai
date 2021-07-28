@@ -64,10 +64,11 @@ class: middle
 
 # Artificial intelligence
 <!-- ![](figures/lec0/Intro_Video.mp4) -->
-<video width="768" height="768" controls>
+.center[
+<video width="500" height="500" controls>
   <source src="figures/lec0/Intro_Video.mp4" type="video/mp4">
 </video>
-
+]
 ---
 
 
