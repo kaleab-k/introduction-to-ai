@@ -345,7 +345,7 @@ class: middle
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/Nu-nlQqFCKg" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/Nu-nlQqFCKg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Speech translation and synthesis (2012)
 
@@ -353,7 +353,7 @@ Speech translation and synthesis (2012)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/7gh6_U7Nfjs" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/7gh6_U7Nfjs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Speech synthesis and question answering (Google, 2018)
 
@@ -361,7 +361,7 @@ Speech synthesis and question answering (Google, 2018)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/V1eYniJ0Rnk" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/V1eYniJ0Rnk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Playing Atari games
 
@@ -369,7 +369,7 @@ Playing Atari games
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/g-dKXOlsf98" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/g-dKXOlsf98?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Beat the best human Go players (2016)
 
@@ -377,7 +377,7 @@ Beat the best human Go players (2016)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/NlpS-DhayQA" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/NlpS-DhayQA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Solving impactful and challenging problems
 
@@ -385,7 +385,7 @@ Solving impactful and challenging problems
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/yyLa6xIK9Qs" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/yyLa6xIK9Qs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Playing soccer (2018)
 
@@ -393,14 +393,14 @@ Playing soccer (2018)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/V-M5SVta2uw" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/V-M5SVta2uw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 A conversation with GPT-3 (2020)
 
 ---
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/gn4nRCC9TwQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/gn4nRCC9TwQ?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Learning to walk (2017)
 
@@ -414,7 +414,7 @@ Similar to a baby learning to walk.
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/qhUvQiKec2U" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/qhUvQiKec2U?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Driving a car (NVIDIA, 2016)
 
@@ -422,7 +422,7 @@ Driving a car (NVIDIA, 2016)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/RCahWWOSxaw" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/RCahWWOSxaw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ... and preventing accidents.
 
@@ -430,7 +430,7 @@ class: middle, center, black-slide
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/5kpsZoKjPgQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/5kpsZoKjPgQ?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Object detection, pose estimation, segmentation (2019)
 
@@ -438,7 +438,7 @@ Object detection, pose estimation, segmentation (2019)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/8BFzu9m52sc" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/8BFzu9m52sc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Generating image descriptions (2015)
 
@@ -446,7 +446,7 @@ Generating image descriptions (2015)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/IvmLEq9piJ4" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/IvmLEq9piJ4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Detecting skin cancer (2017)
 
@@ -454,7 +454,7 @@ Detecting skin cancer (2017)
 
 class: middle, center, black-slide
 
-<iframe width="600" height="450" src="https://www.youtube.com/embed/egJ0PTKQp4U?start=223" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/egJ0PTKQp4U?start=223&rel=0" frameborder="0" allowfullscreen></iframe>
 
 Compose music (NVIDIA, 2017)
 
@@ -473,7 +473,7 @@ It is about *modeling the world*:
 ---
 class: middle
 # AI biases
-## Who do you think will mostly like commit a crime?
+## Who do you think will mostly likely commit a crime?
 .center[
 
 .width-40[![](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/Vernon-Prater-mugshot2-270*360-e39237.jpg)]&nbsp;&nbsp;&nbsp;
@@ -483,9 +483,9 @@ class: middle
 
 class: middle
 # AI biases
-## *Our present racial biases are being coded into the technology of the future :(*.center[
+## *Our present racial biases are being coded into the technology of the future :(*
 .center[
-.width-80[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
+.width-70[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
 ]
 ---
 class: middle
