@@ -479,6 +479,7 @@ class: middle
 .width-40[![](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/Vernon-Prater-mugshot2-270*360-e39237.jpg)]&nbsp;&nbsp;&nbsp;
 .width-40[![](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/Brisha-Borden-mugshot2-270*360-a06698.jpg)]
 ]
+.footnote[Image credits: [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing/)]
 ---
 
 class: middle
@@ -487,6 +488,7 @@ class: middle
 .center[
 .width-60[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
 ]
+.footnote[Image credits: [ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing/)]
 ---
 class: middle
 # AI biases
