@@ -485,7 +485,7 @@ class: middle
 # AI biases
 ## *Our present racial biases are being coded into the technology of the future :(*
 .center[
-.width-70[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
+.width-60[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
 ]
 ---
 class: middle
