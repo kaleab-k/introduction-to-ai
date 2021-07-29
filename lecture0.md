@@ -18,7 +18,9 @@ R: https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
 
 - Course outline
 - Introduction to Artificial Intelligence
-- Highlight AI Researcher
+- Introduction to Machine Learning 
+- Highlight some AI-based projects
+- AI biases
 
 ---
 
