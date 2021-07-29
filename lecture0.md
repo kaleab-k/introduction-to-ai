@@ -473,7 +473,23 @@ It is about *modeling the world*:
 ---
 class: middle
 # AI biases
-## *Our present racial biases are being coded into the technology of the future :(*
+## Who do you think will mostly like commit a crime?
+.center[
+
+.width-40[![](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/Vernon-Prater-mugshot2-270*360-e39237.jpg)]&nbsp;&nbsp;&nbsp;
+.width-40[![](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/Brisha-Borden-mugshot2-270*360-a06698.jpg)]
+]
+---
+
+class: middle
+# AI biases
+## *Our present racial biases are being coded into the technology of the future :(*.center[
+.center[
+.width-80[![](https://amueller.github.io/ml-workshop-1-of-4/slides/images/propublica_compas.png)]
+]
+---
+class: middle
+# AI biases
 ## > Twitter's Photo Cropping Algorithm Draws Heat for Possible Racial Bias
 .center.width-100[![](https://petapixel.com/assets/uploads/2020/09/comparison_feat.jpg)]
 ---
