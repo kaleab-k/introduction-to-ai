@@ -244,15 +244,15 @@ class: center
 
 # ML Tools: scikit-learn
 
-.center.width-60[![](figures/lec1/sklearn-docs.png)]
+.slide_left.width-110[![](figures/lec1/sklearn-docs.png)]
 
 <a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
 
 ---
-class: center
 
 # Representing Data
 
+<br>
 .center.width-100[![](figures/lec1/matrix-representation.png)]
 
 ---
@@ -260,6 +260,7 @@ class: center
 
 # Training and Test Data
 
+<br>
 .center.width-80[![](figures/lec1/train-test-split.png)]
 
 ---
@@ -424,3 +425,430 @@ No more Minimax!
 ]
 
 .footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+---
+
+class: center
+
+# Supervised ML Workflow
+<br>
+.slide_left.width-110[![](figures/lec1/supervised-ml-workflow.png)]
+
+---
+class: center
+
+# Supervised ML Workflow
+<br>
+.slide_left.width-110[![](figures/lec1/supervised-ml-api.png)]
+
+
+---
+class: center
+
+# Nearest Neighbors
+<br>
+.center.width-80[![](figures/lec1/knn_boundary_test_points.png)]
+
+$$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
+
+???
+Let’s say we have this two-class classification dataset here, with
+two features, one on the x axis and one on the y axis.
+And we have three new points as marked by the stars here.
+If I make a prediction using a one nearest neighbor classifier, what
+will it predict?
+It will predict the label of the closest data point in the training set.
+That is basically the simplest machine learning algorithm I can come
+up with.
+
+Here’s the formula:
+the prediction for a new x is the y_i so that x_i is the closest point
+in the training set.
+Ok, so now how do we find out whether this model is any good?
+---
+class: center
+
+# Nearest Neighbors
+<br>
+.center.width-80[![](figures/lec1/knn_boundary_k1.png)]
+
+
+$$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
+
+???
+Let’s say we have this two-class classification dataset here, with
+two features, one on the x axis and one on the y axis.
+And we have three new points as marked by the stars here.
+If I make a prediction using a one nearest neighbor classifier, what
+will it predict?
+It will predict the label of the closest data point in the training set.
+That is basically the simplest machine learning algorithm you can think of.
+
+Here’s the formula:
+the prediction for a new x is the y_i so that x_i is the closest point
+in the training set.
+Ok, so now how do we find out whether this model and these predictions are any good?
+
+---
+class: center
+<br>
+.center.width-80[![](figures/lec1/train_test_set_2d_classification.png)]
+
+
+???
+The simplest way is to split the data into a training and a test set.
+So we take some part of the data set,  let’s say 75% and the
+corresponding output, and train the model, and then apply the model on
+the remaining 25% to compute the accuracy. This test-set accuracy
+will provide an unbiased estimate of future performance.
+So if our i.i.d. assumption is correct, and we get a 90% success
+rate on the test data, we expect about a 90% success rate on any future
+data, for which we don't have labels.
+
+Let's dive into how to build and evaluate this model with scikit-learn.
+
+---
+# KNN with scikit-learn
+<br>
+
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y)
+
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=1)
+knn.fit(X_train, y_train)
+print("accuracy: ", knn.score(X_test, y_test)))
+y_pred = knn.predict(X_test)
+```
+accuracy: 0.77
+
+???
+We import train_test_split form model selection, which does a
+random split into 75%/25%.
+We provide it with the data X, which are our two features, and the
+labels y.
+
+As you might already know, all the models in scikit-learn are implemented
+in python classes, with a single object used to build and store the model.
+
+We start by importing our model, the KneighborsClassifier, and instantiate
+it with n_neighbors=1. Instantiating the object is when we set any hyper parameter,
+such as here saying that we only want to look at the neirest neighbor.
+
+Then we can call the fit method to build the model, here knn.fit(X_train,
+y_train)
+All models in scikit-learn have a fit-method, and all the supervised ones take
+the data X and the outcomes y. The fit method builds the model and stores any
+estimated quantities in the model object, here knn.  In the case of nearest
+neighbors, the `fit` methods simply remembers the whole training set.
+
+Then, we can use knn.score to make predictions on the test data, and
+compare them against the true labels y_test.
+
+For classification models, the score method will always compute
+accuracy.
+
+Just for illustration purposes, I also call the predict method here.
+The predict method is what's used to make predictions on any dataset.
+If we use the score method, it calls predict internally and then
+compares the outcome to the ground truth that's provided.
+
+Who here has not seen this before?
+
+---
+class: center
+
+# Influence of Number of Neighbors
+
+<br>
+.center.width-60[![](figures/lec1/knn_boundary_k1.png)]
+
+
+???
+So this was the predictions as made by one-nearest neighbor.
+But we can also consider more neighbors, for example three. Here is the
+three nearest neighbors for each of the points and the corresponding
+labels.
+We can then make a prediction by considering the majority among these
+three neighbors.
+And as you can see, in this case all the points changed their labels! (I
+was actually quite surprised when I saw that, I just picked some points
+at random).
+Clearly the number of neighbors that we consider matters a lot. But what
+is the right number?
+The is a problem you’ll encounter a lot in machine learning, the
+problem of tuning parameters of the model, also called hyper-parameters,
+which can not be learned directly from the data.
+
+---
+class: center
+
+# Influence of Number of Neighbors
+
+<br>
+.center.width-60[![](figures/lec1/knn_boundary_k3.png)]
+
+???
+So this was the predictions as made by one-nearest neighbor.
+But we can also consider more neighbors, for example three. Here is the
+three nearest neighbors for each of the points and the corresponding
+labels.
+We can then make a prediction by considering the majority among these
+three neighbors.
+And as you can see, in this case all the points changed their labels! (I
+was actually quite surprised when I saw that, I just picked some points
+at random).
+Clearly the number of neighbors that we consider matters a lot. But what
+is the right number?
+The is a problem you’ll encounter a lot in machine learning, the
+problem of tuning parameters of the model, also called hyper-parameters,
+which can not be learned directly from the data.
+---
+class: center, some-space
+
+# Influence of n_neighbors
+
+<br>
+.center.width-60[![](figures/lec1/knn_boundary_varying_k.png)]
+
+???
+Here’s an overview of how the classification changes if we consider
+different numbers of neighbors.
+You can see as red and blue circles the training data. And the background
+is colored according to which class a datapoint would be assigned to
+for each location.
+For one neighbor, you can see that each point in the training set has
+a little area around it that would be classified according to it’s
+label. This means all the training points would be classified correctly,
+but it leads to a very complex shape of the decision boundary.
+If we increase the number of neighbors, the boundary between red and
+blue simplifies, and with 40 neighbors we mostly end up with a line.
+This also means that now many of the training data points would be
+labeled incorrectly.
+---
+class: center, spacious
+
+# Model complexity
+
+<br>
+.center.width-80[![](figures/lec1/knn_model_complexity.png)]
+
+
+???
+We can look at this in more detail by comparing training and test set
+scores for the different numbers of neighbors.
+Here, I did a random 75%/25% split again. This is a very noisy plot as
+the dataset is very small and I only did a random split, but you can
+see a trend here.
+You can see that for a single neighbor, the training score is 1 so perfect
+accuracy, but the test score is only 70%.  If we increase the number of
+neighbors we consider, the training score goes down, but the test score
+goes up, with an optimum at 19 and 21, but then both go down again.
+
+This is a very typical behavior, that I sketched in a schematic for you.
+
+---
+class: center, middle
+
+# Notebook: Supervised Learning
+
+---
+
+class: middle
+
+# AI beyond Pacman
+
+---
+
+class: black-slide, middle
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/HS1wV9NMLr8?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+How AI Helps Autonomous Vehicles See Outside the Box<br>
+(See also [other episodes](https://www.youtube.com/playlist?list=PLZHnYvH1qtOYkElUMqYiHDMrGTPnqRhSr) from NVIDIA DRIVE Labs)
+]
+
+
+---
+
+class: black-slide, middle
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/NlpS-DhayQA?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+Solving impactful and challenging problems
+]
+
+---
+
+class: black-slide, middle
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/_eNUtLHXJkc?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+Improving Tuberculosis Monitoring with Deep Learning
+]
+
+---
+
+# Summary
+
+- Learning is (supposedly) a key element of intelligence.
+- Statistical learning aims at learning probabilistic models (their parameters or structures) automatically from data.
+- Supervised learning is used to learn functions from a set of training examples.
+    - Linear models are simple predictive models, effective on some tasks but usually insufficiently expressive.
+    - Neural networks are defined as a composition of squashed linear models.
+
+???
+
+- Reinforcement learning = learning to behave in an unknown environment from sparse rewards.
+- Unsupervised learning = learning a model of the world by observing it.
+
+---
+
+class: end-slide, center
+
+
+The end.
+
+---
+
+
+
+# Chomsky vs. Piaget
+
+.grid[
+.kol-2-3[
+- Noam Chomsky's *innatism*:
+    - State that humans possess a genetically determined faculty for thought and language.
+    - The structures of language and thought are set in motion through interaction with the environment.
+- Jean Piaget's **constructivism**:
+    - Deny the existence of innate cognitive structure specific for thought and language.
+    - Postulate instead all cognitive acquisitions, including language, to be the outcome of a gradual process of construction, i.e., a learning procedure.
+]
+.kol-1-3[.center.width-80[![](figures/lec1/piaget-chomsky.jpg)]]
+]
+
+
+What about AI?
+- Should it be a pre-wired efficient machine?
+- Or a machine that can learn and improve?
+- or maybe a bit of both?
+
+---
+
+class: middle, black-slide
+
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/aCCotxqxFsk?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+The debate continues...
+]
+
+---
+
+class: middle
+
+
+# Unsupervised learning
+
+---
+
+class: middle
+
+
+-  Most of the learning performed by animals and humans is **unsupervised**.
+    - Without labeled examples nor rewards.
+- We learn how the world works through observation:
+    - We learn that the world is 3-dimensional.
+    - We learn that objects can move independently of each other.
+    - We learn *object permanence*.
+    - We learn to predict what the world will look one second or one hour from now.
+
+.footnote[Credits: Yann Lecun (NYU), [Deep Learning, 2017](https://cilvr.nyu.edu/doku.php?id=deeplearning2017:schedule)]
+
+---
+
+class: middle, black-slide
+
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/-gWJrZ7MHpY?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+Object permanence in infants (part 1)
+]
+
+---
+
+class: middle, black-slide
+
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/kV0o6RK54-M?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+Object permanence in infants (part 2)
+]
+
+
+---
+
+class: middle, black-slide
+
+
+.center[
+<iframe width="640" height="400" src="https://www.youtube.com/embed/OLrYzY3jVPY?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
+
+In animals
+]
+
+
+---
+
+class: middle
+
+## Common sense
+
+We build a model of the world through *predictive unsupervised learning*.
+- This predictive model gives us **common sense**.
+- Unsupervised learning discovers regularities in the world.
+
+---
+
+class: middle
+
+If I say: "Bernard picks up his bag and leaves the room".
+
+You can **infer**:
+- Bernard stood up, extended his arm to pick the bag, walked towards the door, opened the door, walked out.
+- He and his bag are not in the room anymore.
+- He probably did not dematerialized or flied out.
+
+.center.width-50[![](figures/lec1/bernard.png)]
+
+.footnote[Credits: Yann Lecun (NYU), [Deep Learning, 2017](https://cilvr.nyu.edu/doku.php?id=deeplearning2017:schedule)]
+
+---
+
+class: middle, center
+
+
+How do we do that?
+
+We have no clue! (mostly)
+
+---
+# Machine Learning Resources  
+<br/>
+.slide_left.width-110[![](figures/lec1/ML Resources.png)]
+---
+
+# Other Resources
+
+.center[
+![:scale 25%](figures/lec1/PDSH.png)&nbsp;&nbsp;&nbsp;
+![:scale 25%](figures/lec1/imlp.png)&nbsp;&nbsp;&nbsp;
+![:scale 25%](figures/lec1/esl.png)
+]
