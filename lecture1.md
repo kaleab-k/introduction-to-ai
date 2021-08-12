@@ -407,7 +407,7 @@ log_reg.fit(X, y)
 
 .grid[
 .kol-2-3[
-    (figures/lec1/multinomial.svg)
+    .width-60[![](figures/lec1/multinomial.svg)]
 ]
 .kol-1-3[
 Multi-class:
