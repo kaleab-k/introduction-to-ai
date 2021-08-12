@@ -437,150 +437,6 @@ For a given input ``x``:
 ]]
 ---
 
-
-# Linear regression
-
-Let us first assume that $y \in \mathbb{R}$.
-
-<br>
-.center.width-90[![](figures/lec1/lr-cartoon.png)]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
-class: middle
-
-.grid[
-.kol-1-5[.center.width-50[![](figures/lec1/latent.svg)]]
-.kol-4-5[.center.width-60[![](figures/lec1/lr-latent.png)]]
-]
-
-
-Linear regression considers a parameterized linear Gaussian model for its parametric model of $p(y|\\mathbf{x})$, that is
-$$p(y|\mathbf{x}) = \mathcal{N}(y | \mathbf{w}^T \mathbf{x} + b, \sigma^2),$$
-where $\mathbf{w}$ and $b$ are parameters to determine.
-
----
-
-<br><br>
-
-To learn the conditional distribution $p(y|\mathbf{x})$, we maximize
-$$p(y|\mathbf{x}) = \frac{1}{\sqrt{2\pi}\sigma} \exp\left(-\frac{(y-(\mathbf{w}^T \mathbf{x} + b))^2}{2\sigma^2}\right)$$
-w.r.t. $\mathbf{w}$ and $b$ over the data $\mathbf{d} = \\\{ (\mathbf{x}\_j, y\_j) \\\}$.
-
---
-
-
-
-
-By constraining the derivatives of the log-likelihood to $0$, we arrive to the problem of minimizing
-$$\sum\_{j=1}^N (y\_j - (\mathbf{w}^T \mathbf{x}\_j + b))^2.$$
-Therefore, minimizing the sum of squared errors corresponds to the MLE solution for a linear fit, assuming Gaussian noise of fixed variance.
-
----
-
-class: middle
-
-.center.width-80[![](figures/lec1/lq.png)]
-
----
-
-# Linear classification
-
-Let us now assume $y \in \\{0,1\\}$.
-
-<br>
-.center.width-50[![](figures/lec1/classif-cartoon.png)]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
-
----
-
-class: middle
-
-The linear classifier model is a squashed linear function of its inputs:
-$$h(\mathbf{x}; \mathbf{w}, b) = \text{sign}(\mathbf{w}^T \mathbf{x} + b)$$
-
-
-.center.width-60[![](figures/lec1/activation-sign.png)]
-
----
-
-class: middle
-
-.center.width-30[![](figures/lec1/linear-classifier.png)]
-
-- Without loss of generality, the model can be rewritten without $b$ as $h(\mathbf{x}; \mathbf{w}) = \text{sign}(\mathbf{w}^T \mathbf{x})$, where $\mathbf{w} \in \mathbb{R}^{d+1}$ and $\mathbf{x}$ is extended with a dummy element $x\_0 = 1$.
-- Predictions are computed by comparing the feature vector $\mathbf{x}$ to the weight vector $\mathbf{w}$. Geometrically, $\mathbf{w}^T \mathbf{x}$ corresponds to $||\mathbf{w}|| ||\mathbf{x}|| \cos(\theta)$.
-
-???
-
-The family $\mathcal{H}$ of hypothesis is induced from the set $\mathbb{R}^{d+1}$ of possible parameters values $\mathbf{w}$ . Learning consists in finding a good vector $\mathbf{w}$ in this space.
-
----
-# Apprenticeship
-
-Can we learn to play Pacman only from observations?
-- Feature vectors $\mathbf{x} = g(s)$ are extracted from the game states $s$. Output values $y$ corresponds to actions $a$ .
-- State-action pairs $(\mathbf{x}, y)$ are collected by observing an expert playing.
-- We want to learn the actions that the expert would take in a given situation. That is, learn the mapping $f:\mathbb{R}^d \to \mathcal{A}$.
-- This is a multiclass classification problem.
-
-<br>
-.center.width-70[![](figures/lec1/pacman.png)]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
-???
-
-<span class="Q">[Q]</span> How is this (very) different from reinforcement learning?
-
----
-
-class: middle, black-slide
-
-.center[
-<video controls muted preload="auto" height="400" width="640">
-  <source src="./figures/lec1/training1.mp4" type="video/mp4">
-</video>
-
-The Perceptron agent observes a very good Minimax-based agent for two games and updates its weight vectors as data are collected.
-]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
-class: middle, black-slide
-
-.center[
-<video controls muted preload="auto" height="400" width="640">
-  <source src="./figures/lec1/training2.mp4" type="video/mp4">
-</video>
-
-<br><br>]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
-class: middle, black-slide
-
-.center[
-<video controls muted preload="auto" height="400" width="640">
-  <source src="./figures/lec1/apprentice.mp4" type="video/mp4">
-</video>
-
-After two training episodes, the Perceptron agents plays.<br>
-No more Minimax!
-]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
 class: center
 
 # Supervised ML Workflow
@@ -600,7 +456,7 @@ class: center
 
 # Nearest Neighbors
 <br>
-.center.width-80[![](figures/lec1/knn_boundary_test_points.png)]
+.center.width-60[![](figures/lec1/knn_boundary_test_points.png)]
 
 $$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
 
@@ -623,7 +479,7 @@ class: center
 
 # Nearest Neighbors
 <br>
-.center.width-80[![](figures/lec1/knn_boundary_k1.png)]
+.center.width-60[![](figures/lec1/knn_boundary_k1.png)]
 
 
 $$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
@@ -807,10 +663,71 @@ class: center, middle
 # Notebook: Supervised Learning
 
 ---
+# Apprenticeship
+
+Can we learn to play Pacman only from observations?
+- Feature vectors $\mathbf{x} = g(s)$ are extracted from the game states $s$. Output values $y$ corresponds to actions $a$ .
+- State-action pairs $(\mathbf{x}, y)$ are collected by observing an expert playing.
+- We want to learn the actions that the expert would take in a given situation. That is, learn the mapping $f:\mathbb{R}^d \to \mathcal{A}$.
+- This is a multiclass classification problem.
+
+<br>
+.center.width-70[![](figures/lec1/pacman.png)]
+
+.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+???
+
+<span class="Q">[Q]</span> How is this (very) different from reinforcement learning?
+
+---
+
+class: middle, black-slide
+
+.center[
+<video controls muted preload="auto" height="400" width="640">
+  <source src="./figures/lec1/training1.mp4" type="video/mp4">
+</video>
+
+The Perceptron agent observes a very good Minimax-based agent for two games and updates its weight vectors as data are collected.
+]
+
+.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+---
+
+class: middle, black-slide
+
+.center[
+<video controls muted preload="auto" height="400" width="640">
+  <source src="./figures/lec1/training2.mp4" type="video/mp4">
+</video>
+
+<br><br>]
+
+.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+---
+
+class: middle, black-slide
+
+.center[
+<video controls muted preload="auto" height="400" width="640">
+  <source src="./figures/lec1/apprentice.mp4" type="video/mp4">
+</video>
+
+After two training episodes, the Perceptron agents plays.<br>
+No more Minimax!
+]
+
+.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
+
+
+---
 
 class: middle
 
-# AI beyond Pacman
+# ML beyond Pacman
 
 ---
 
@@ -843,21 +760,6 @@ class: black-slide, middle
 
 Improving Tuberculosis Monitoring with Deep Learning
 ]
-
----
-
-# Summary
-
-- Learning is (supposedly) a key element of intelligence.
-- Statistical learning aims at learning probabilistic models (their parameters or structures) automatically from data.
-- Supervised learning is used to learn functions from a set of training examples.
-    - Linear models are simple predictive models, effective on some tasks but usually insufficiently expressive.
-    - Neural networks are defined as a composition of squashed linear models.
-
-???
-
-- Reinforcement learning = learning to behave in an unknown environment from sparse rewards.
-- Unsupervised learning = learning a model of the world by observing it.
 
 ---
 
@@ -1001,7 +903,7 @@ We have no clue! (mostly)
 # Other Resources
 
 .center[
-.center.width-30[![](figures/lec1/PDSH.png)]&nbsp;&nbsp;&nbsp;
-.center.width-30[![](figures/lec1/imlp.png)]&nbsp;&nbsp;&nbsp;
-.center.width-30[![](figures/lec1/esl.png)]
+.width-30[![](figures/lec1/PDSH.png)]&nbsp;
+.width-30[![](figures/lec1/imlp.png)]&nbsp;
+.width-30[![](figures/lec1/esl.png)]
 ]
