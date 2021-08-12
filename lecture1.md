@@ -326,8 +326,7 @@ Sale_Price =       0.1 * Gr_Liv_Area
 
 Fit a prediction line as close as possible to all training points.
 
-.center.width-60[![](figures/lec1/linear_fit.svg)]
-<br>
+.center.width-50[![](figures/lec1/linear_fit.svg)]
 ```python
 from sklearn.linear_model import LinearRegression
 
@@ -341,7 +340,7 @@ linear_regression.fit(X, y)
 The slope is chosen to minimize the distance between the prediction and the
 data points
 
-.center.width-60[![](figures/lec1/linear_fit_red.svg)]
+.center.width-50[![](figures/lec1/linear_fit_red.svg)]
 
 <br>
 
@@ -354,7 +353,7 @@ squared_error = np.sum((y - y_pred) ** 2)
 ---
 # Linear regression with several variables
 
-.center.width-70[![](figures/lec1/lin_reg_3D.svg)]
+.center.width-50[![](figures/lec1/lin_reg_3D.svg)]
 
 The mental picture needs to be extended to several dimensions.
 
@@ -371,8 +370,7 @@ Sale_Price =       0.1 * Gr_Liv_Area
 For *classification*, we use a logistic regression model: `y` is either 0
 (*blue*) or 1 (**red**)
 
-.center.width-60[![](figures/lec1/categorical.svg)]
-<br>
+.center.width-50[![](figures/lec1/categorical.svg)]
 ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -387,11 +385,9 @@ log_reg = LogisticRegression()
 The output of the model is interpreted as the probability of
 y being 1 (red) for a given x.
 
-.center.width-60[![](figures/lec1/logistic_color.svg)]
-<br>
+.center.width-45[![](figures/lec1/logistic_color.svg)]
  ```python
 from sklearn.linear_model import LogisticRegression
-
 
 log_reg = LogisticRegression()
 log_reg.fit(X, y)
@@ -403,15 +399,15 @@ log_reg.fit(X, y)
 `X` is 2-dimensional, `y` is represented by the color
 
 .center[
-.center.width-40[![](figures/lec1/logistic_2D.svg)]&nbsp;&nbsp;
-.center.width-40[![](figures/lec1/logistic_3D.svg)]
+.width-40[![](figures/lec1/logistic_2D.svg)]
+.width-40[![](figures/lec1/logistic_3D.svg)]
 ]
 ---
 # Logistic regression & multiclass classification
 
 .grid[
 .kol-2-3[
-    .center.width-60[![](figures/lec1/multinomial.svg)]
+    .width-60[![](figures/lec1/multinomial.svg)]
 ]
 .kol-1-3[
 Multi-class:
@@ -429,12 +425,12 @@ For a given input ``x``:
 
 .grid[
 .kol-1-2[
-.center.width-60[![](figures/lec1/lin_separable.svg)]
+.center.width-95[![](figures/lec1/lin_separable.svg)]
 
 *Almost* linearly separable
 ]
 .kol-1-2[
-.center.width-60[![](figures/lec1/lin_not_separable.svg)]
+.center.width-90[![](figures/lec1/lin_not_separable.svg)]
 
 **Not** linearly separable →&nbsp;Underfitting
 
