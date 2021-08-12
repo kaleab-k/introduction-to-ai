@@ -85,20 +85,20 @@ class: middle
 
 class: middle
 # What is Machine Learning 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Def.png)]
 ---
 # What is Machine Learning
-<br/> 
+ 
 .slide_left.width-110[![](figures/lec1/ML_Def_2.png)]
 ---
 # What is Machine Learning 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Def_3.png)]
 ---
 # Machine Learning: Why?
-<br/>
-<br/>
+
+
 .slide_left.width-110[![](figures/lec1/ML_Why.png)]
 ---
 # Programming vs ML
@@ -137,67 +137,67 @@ class: middle
 
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Process.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_1.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_2.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_3.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_4.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_5.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_6.png)]
 ---
 # Machine Learning Process 
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML_Step_7.png)]
 ---
 # Types of ML: Categories of Learning
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML Types.png)]
 ---
 # Types of ML: Categories of Learning
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Supervised.png)]
 ---
 # Types of ML: Categories of Learning
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Unsupervised.png)]
 ---
 # Types of ML: Categories of Learning
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Reinforcement.png)]
 ---
 # Types of ML: Problem Domains
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML Types_2.png)]
 ---
 # Types of ML: Problem Domains
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Regression.png)]
 ---
 # Types of ML: Problem Domains
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Classification.png)]
 ---
 # Types of ML: Problem Domains
-<br/>
+
 .slide_left.width-110[![](figures/lec1/Clustering.png)]
 
 ---
@@ -827,7 +827,7 @@ We have no clue! (mostly)
 ---
 
 <!-- # Machine Learning Resources  
-<br/>
+
 .slide_left.width-110[![](figures/lec1/ML Resources.png)]
 ---
 
