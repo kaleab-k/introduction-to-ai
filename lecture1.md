@@ -86,36 +86,49 @@ class: middle
 class: middle
 # What is Machine Learning 
 .slide_left.width-110[![](figures/lec1/ML_Def.png)]
---
+---
 # What is Machine Learning 
 .slide_left.width-110[![](figures/lec1/ML_Def_2.png)]
---
+---
 # What is Machine Learning 
 .slide_left.width-110[![](figures/lec1/ML_Def_3.png)]
 ---
 # Machine Learning: Why?
-.center.width-80[![](figures/lec1/ML_Why.png)]
+.slide_left.width-110[![](figures/lec1/ML_Why.png)]
 ---
 # Programming vs ML
-.center.width-80[![](figures/lec1/ProgVsML.png)]
+.slide_left.width-110[![](figures/lec1/ProgVsML.png)]
 ---
 
-# ML: What is it good for?
+# What is Machine Learning
 
-- *Problems with longs lists of rules* - when the traditional approach fails, machine learning may help.
-- *Continually changing environments* - machine learning can learn and adapt to new scenarios. 
-- *Discovering insights within large collections of data* - can you imagine trying to go through every transaction your (large) company has ever had by hand?
+## ML: What is it good for?
+
+- *Problems with longs lists of rules* 
+    - when the traditional approach fails, machine learning may help.
+- *Continually changing environments* 
+    - machine learning can learn and adapt to new scenarios. 
+- *Discovering insights within large collections of data* 
+    - can you imagine trying to go through every transaction your (large) company has ever had by hand?
 
 ---
 
-# ML: Terminology
+# What is Machine Learning
 
-- *Algorithms:* A set of rules and statistical techniques used to learn patters from data.
-- *Model:* A model is what is trained using an ML algorithm.
-- *Predictor Variable:* It is a feature(s) of the data that can be used to predict the output. 
-- *Response Variable:* It is the output variable that needs to be predicted by using the predictor variables.
-- *Training Data:* The data that is used to build the ML model. 
-- *Testing Data:* The data that is used to evaluate the generalization of the trained ML model.   
+## ML: Terminology
+
+- *Algorithms:* 
+    - A set of rules and statistical techniques used to learn patters from data.
+- *Model:* 
+    - A model is what is trained using an ML algorithm.
+- *Predictor Variable:* 
+    - It is a feature(s) of the data that can be used to predict the output. 
+- *Response Variable:* 
+    - It is the output variable that needs to be predicted by using the predictor variables.
+- *Training Data:* 
+    - The data that is used to build the ML model. 
+- *Testing Data:* 
+    - The data that is used to evaluate the generalization of the trained ML model.   
 
 ---
 # Machine Learning Process 
