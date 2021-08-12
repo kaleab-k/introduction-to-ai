@@ -52,7 +52,7 @@ class: middle
 
 ---
 
-count: false
+
 class: black-slide, middle
 
 .center.width-50[![](figures/lec1/cat2.png)]
@@ -61,14 +61,14 @@ class: black-slide, middle
 
 ---
 
-count: false
+
 class: black-slide, middle
 
 .center.width-80[![](figures/lec1/cat3.png)]
 
 ---
 
-count: false
+
 class: black-slide, middle
 
 .center.width-80[![](figures/lec1/cat4.png)]
@@ -274,7 +274,7 @@ w.r.t. $\mathbf{w}$ and $b$ over the data $\mathbf{d} = \\\{ (\mathbf{x}\_j, y\_
 
 --
 
-count: false
+
 
 
 By constraining the derivatives of the log-likelihood to $0$, we arrive to the problem of minimizing
@@ -391,7 +391,6 @@ class: center
 ![:scale 60%](figures/lec1/sklearn-docs.png)
 
 <a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
-
 
 ---
 class: center
@@ -675,13 +674,13 @@ Improving Tuberculosis Monitoring with Deep Learning
 ---
 
 class: end-slide, center
-count: false
+
 
 The end.
 
 ---
 
-count: false
+
 
 # Chomsky vs. Piaget
 
@@ -706,7 +705,7 @@ What about AI?
 ---
 
 class: middle, black-slide
-count: false
+
 
 .center[
 <iframe width="640" height="400" src="https://www.youtube.com/embed/aCCotxqxFsk?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
@@ -717,14 +716,14 @@ The debate continues...
 ---
 
 class: middle
-count: false
+
 
 # Unsupervised learning
 
 ---
 
 class: middle
-count: false
+
 
 -  Most of the learning performed by animals and humans is **unsupervised**.
     - Without labeled examples nor rewards.
@@ -739,7 +738,7 @@ count: false
 ---
 
 class: middle, black-slide
-count: false
+
 
 .center[
 <iframe width="640" height="400" src="https://www.youtube.com/embed/-gWJrZ7MHpY?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
@@ -750,7 +749,7 @@ Object permanence in infants (part 1)
 ---
 
 class: middle, black-slide
-count: false
+
 
 .center[
 <iframe width="640" height="400" src="https://www.youtube.com/embed/kV0o6RK54-M?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
@@ -762,7 +761,7 @@ Object permanence in infants (part 2)
 ---
 
 class: middle, black-slide
-count: false
+
 
 .center[
 <iframe width="640" height="400" src="https://www.youtube.com/embed/OLrYzY3jVPY?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
@@ -774,7 +773,6 @@ In animals
 ---
 
 class: middle
-count: false
 
 ## Common sense
 
@@ -785,7 +783,6 @@ We build a model of the world through *predictive unsupervised learning*.
 ---
 
 class: middle
-count: false
 
 If I say: "Bernard picks up his bag and leaves the room".
 
@@ -801,7 +798,7 @@ You can **infer**:
 ---
 
 class: middle, center
-count: false
+
 
 How do we do that?
 
