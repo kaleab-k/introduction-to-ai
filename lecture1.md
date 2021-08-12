@@ -289,17 +289,14 @@ settings.
 # Linear Regression
 ## An example: estimating housing prices
 
-
-.grid[
-.kol-2-3[
 | Gr_Liv_Area | Year_Built | Full_Bath | Sale_Price |
 | ----------- | ---------- | --------- | ---------- |
 |        1656 |       1960 |         1 |      215.0 |
 |         896 |       1961 |         1 |      105.0 |
 |        1329 |       1958 |         1 |      172.0 |
 |        2110 |       1968 |         2 |      244.0 |
-|        1629 |       1997 |         2 |      189.9 |]
-.kol-1-3[
+|        1629 |       1997 |         2 |      189.9 |
+
 ### Linear approximation of Sale_Price:
 
 ```
@@ -308,8 +305,6 @@ Sale_Price =       0.1 * Gr_Liv_Area
               -    8.9 * Full_Bath
               - 2200.0
 ```
-
-]]
 
 ---
 
