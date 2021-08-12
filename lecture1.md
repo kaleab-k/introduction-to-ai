@@ -327,10 +327,11 @@ Sale_Price =       0.1 * Gr_Liv_Area
 
 Fit a prediction line as close as possible to all training points.
 
-
+.grid[
+.kol-1-2[
 .center.width-60[![](figures/lec1/linear_fit.svg)]
-
-<br>
+]
+.kol-1-2[
 ```python
 from sklearn.linear_model import LinearRegression
 
@@ -338,15 +339,17 @@ from sklearn.linear_model import LinearRegression
 linear_regression = LinearRegression()
 linear_regression.fit(X, y)
 ```
+]]
 ---
 # Linear regression
 
 The slope is chosen to minimize the distance between the prediction and the
 data points
-
+.grid[
+.kol-1-2[
 .center.width-60[![](figures/lec1/linear_fit_red.svg)]
-
-<br>
+]
+.kol-1-2[
 ```python
 from sklearn.linear_model import LinearRegression
 
@@ -362,13 +365,15 @@ import numpy as np
 y_pred = linear_regression.predict(X)
 squared_error = np.sum((y - y_pred) ** 2)
 ```
+]]
 ---
 # Linear regression with several variables
 
-
+.grid[
+.kol-1-2[
 .center.width-70[![](figures/lec1/lin_reg_3D.svg)]
-
-<br>
+]
+.kol-1-2[
 The mental picture needs to be extended to several dimensions.
 
 For instance, in 2D:
@@ -378,16 +383,18 @@ Sale_Price =       0.1 * Gr_Liv_Area
               +    1.1 * Year_Built
               - 2209.0
 ```
+]]
 ---
 # For classification: logistic regression
 
 For **classification**, we use a logistic regression model: `y` is either 0
-(blue) or 1 (red)
+(*blue*) or 1 (**red**)
 
-
+.grid[
+.kol-1-2[
 .center.width-60[![](figures/lec1/categorical.svg)]
-
-<br>
+]
+.kol-1-2[
  ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -395,6 +402,7 @@ from sklearn.linear_model import LogisticRegression
 log_reg = LogisticRegression()
 
  ```
+]]
 ---
 
 # For classification: logistic regression
@@ -402,9 +410,11 @@ log_reg = LogisticRegression()
 The output of the model is interpreted as the probability of
 y being 1 (red) for a given x.
 
+.grid[
+.kol-1-2[
 .center.width-60[![](figures/lec1/logistic_color.svg)]
-
-<br>
+]
+.kol-1-2[
  ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -412,6 +422,7 @@ from sklearn.linear_model import LogisticRegression
 log_reg = LogisticRegression()
 log_reg.fit(X, y)
  ```
+]]
 ---
 # Logistic regression in 2 dimensions
 
