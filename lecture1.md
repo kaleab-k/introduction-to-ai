@@ -436,7 +436,7 @@ For a given input ``x``:
   - predict one probability per class
   - probabilities sum to 1
 
-]
+]]
 ---
 # Linear models are not suited to all data
 
@@ -452,7 +452,7 @@ For a given input ``x``:
 
 **Not** linearly separable →&nbsp;Underfitting
 
-]
+]]
 ---
 
 
@@ -603,14 +603,14 @@ class: center
 
 # Supervised ML Workflow
 <br>
-.slide_left.width-110[![](figures/lec1/supervised-ml-workflow.png)]
+.center.width-80[![](figures/lec1/supervised-ml-workflow.png)]
 
 ---
 class: center
 
 # Supervised ML Workflow
 <br>
-.slide_left.width-110[![](figures/lec1/supervised-ml-api.png)]
+.center.width-80[![](figures/lec1/supervised-ml-api.png)]
 
 
 ---
