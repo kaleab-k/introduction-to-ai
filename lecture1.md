@@ -315,7 +315,6 @@ Predict the value of the target `y` given some observation `x`
 
 .center.width-60[![](figures/lec1/linear_data.svg)]
 
-<br><br>
 ### Linear approximation of Sale_Price:
 
 ```
@@ -327,11 +326,8 @@ Sale_Price =       0.1 * Gr_Liv_Area
 
 Fit a prediction line as close as possible to all training points.
 
-.grid[
-.kol-1-2[
 .center.width-60[![](figures/lec1/linear_fit.svg)]
-]
-.kol-1-2[
+<br>
 ```python
 from sklearn.linear_model import LinearRegression
 
@@ -339,24 +335,14 @@ from sklearn.linear_model import LinearRegression
 linear_regression = LinearRegression()
 linear_regression.fit(X, y)
 ```
-]]
 ---
 # Linear regression
 
 The slope is chosen to minimize the distance between the prediction and the
 data points
-.grid[
-.kol-1-2[
+
 .center.width-60[![](figures/lec1/linear_fit_red.svg)]
-]
-.kol-1-2[
-```python
-from sklearn.linear_model import LinearRegression
 
-
-linear_regression = LinearRegression()
-linear_regression.fit(X, y)
-```
 <br>
 
 ```python
@@ -365,15 +351,11 @@ import numpy as np
 y_pred = linear_regression.predict(X)
 squared_error = np.sum((y - y_pred) ** 2)
 ```
-]]
 ---
 # Linear regression with several variables
 
-.grid[
-.kol-1-2[
 .center.width-70[![](figures/lec1/lin_reg_3D.svg)]
-]
-.kol-1-2[
+
 The mental picture needs to be extended to several dimensions.
 
 For instance, in 2D:
@@ -383,26 +365,21 @@ Sale_Price =       0.1 * Gr_Liv_Area
               +    1.1 * Year_Built
               - 2209.0
 ```
-]]
 ---
 # For classification: logistic regression
 
-For **classification**, we use a logistic regression model: `y` is either 0
+For *classification*, we use a logistic regression model: `y` is either 0
 (*blue*) or 1 (**red**)
 
-.grid[
-.kol-1-2[
 .center.width-60[![](figures/lec1/categorical.svg)]
-]
-.kol-1-2[
- ```python
+<br>
+```python
 from sklearn.linear_model import LogisticRegression
 
 
 log_reg = LogisticRegression()
 
  ```
-]]
 ---
 
 # For classification: logistic regression
@@ -410,11 +387,8 @@ log_reg = LogisticRegression()
 The output of the model is interpreted as the probability of
 y being 1 (red) for a given x.
 
-.grid[
-.kol-1-2[
 .center.width-60[![](figures/lec1/logistic_color.svg)]
-]
-.kol-1-2[
+<br>
  ```python
 from sklearn.linear_model import LogisticRegression
 
@@ -422,15 +396,15 @@ from sklearn.linear_model import LogisticRegression
 log_reg = LogisticRegression()
 log_reg.fit(X, y)
  ```
-]]
+
 ---
 # Logistic regression in 2 dimensions
 
 `X` is 2-dimensional, `y` is represented by the color
 
 .center[
-.center.width-45[![](figures/lec1/logistic_2D.svg)]&nbsp;&nbsp;&nbsp;
-.center.width-45[![](figures/lec1/logistic_3D.svg)]
+.center.width-40[![](figures/lec1/logistic_2D.svg)]&nbsp;&nbsp;
+.center.width-40[![](figures/lec1/logistic_3D.svg)]
 ]
 ---
 # Logistic regression & multiclass classification
@@ -440,6 +414,7 @@ log_reg.fit(X, y)
     .center.width-60[![](figures/lec1/multinomial.svg)]
 ]
 .kol-1-3[
+Multi-class:
 - `y` in {0, 1, 2}
 - `y` in {blue, orange, green}
 
@@ -454,12 +429,12 @@ For a given input ``x``:
 
 .grid[
 .kol-1-2[
-.center.width-45[![](figures/lec1/lin_separable.svg)]
+.center.width-60[![](figures/lec1/lin_separable.svg)]
 
 *Almost* linearly separable
 ]
 .kol-1-2[
-.center.width-45[![](figures/lec1/lin_not_separable.svg)]
+.center.width-60[![](figures/lec1/lin_not_separable.svg)]
 
 **Not** linearly separable →&nbsp;Underfitting
 
