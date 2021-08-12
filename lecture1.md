@@ -244,7 +244,7 @@ class: center
 
 # ML Tools: scikit-learn
 
-![:scale 60%](figures/lec1/sklearn-docs.png)
+.center.width-60[![](figures/lec1/sklearn-docs.png)]
 
 <a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
 
@@ -253,13 +253,15 @@ class: center
 
 # Representing Data
 
-![:scale 100%](figures/lec1/matrix-representation.png)
+.center.width-100[![](figures/lec1/matrix-representation.png)]
+
 ---
 class: center
 
 # Training and Test Data
 
-![:scale 80%](figures/lec1/train-test-split.png)
+.center.width-80[![](figures/lec1/train-test-split.png)]
+
 ---
 class: center, middle
 
@@ -299,7 +301,6 @@ class: middle
 .kol-1-5[.center.width-50[![](figures/lec1/latent.svg)]]
 .kol-4-5[.center.width-60[![](figures/lec1/lr-latent.png)]]
 ]
-
 
 
 Linear regression considers a parameterized linear Gaussian model for its parametric model of $p(y|\\mathbf{x})$, that is
