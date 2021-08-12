@@ -85,15 +85,20 @@ class: middle
 
 class: middle
 # What is Machine Learning 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Def.png)]
 ---
-# What is Machine Learning 
+# What is Machine Learning
+<br/> 
 .slide_left.width-110[![](figures/lec1/ML_Def_2.png)]
 ---
 # What is Machine Learning 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Def_3.png)]
 ---
 # Machine Learning: Why?
+<br/>
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Why.png)]
 ---
 # Programming vs ML
@@ -132,51 +137,67 @@ class: middle
 
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Process.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_1.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_2.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_3.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_4.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_5.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_6.png)]
 ---
 # Machine Learning Process 
+<br/>
 .slide_left.width-110[![](figures/lec1/ML_Step_7.png)]
 ---
 # Types of ML: Categories of Learning
+<br/>
 .slide_left.width-110[![](figures/lec1/ML Types.png)]
 ---
 # Types of ML: Categories of Learning
+<br/>
 .slide_left.width-110[![](figures/lec1/Supervised.png)]
 ---
 # Types of ML: Categories of Learning
+<br/>
 .slide_left.width-110[![](figures/lec1/Unsupervised.png)]
 ---
 # Types of ML: Categories of Learning
+<br/>
 .slide_left.width-110[![](figures/lec1/Reinforcement.png)]
 ---
 # Types of ML: Problem Domains
+<br/>
 .slide_left.width-110[![](figures/lec1/ML Types_2.png)]
 ---
 # Types of ML: Problem Domains
+<br/>
 .slide_left.width-110[![](figures/lec1/Regression.png)]
 ---
 # Types of ML: Problem Domains
+<br/>
 .slide_left.width-110[![](figures/lec1/Classification.png)]
 ---
 # Types of ML: Problem Domains
+<br/>
 .slide_left.width-110[![](figures/lec1/Clustering.png)]
 
 ---
@@ -302,66 +323,6 @@ class: middle
 The family $\mathcal{H}$ of hypothesis is induced from the set $\mathbb{R}^{d+1}$ of possible parameters values $\mathbf{w}$ . Learning consists in finding a good vector $\mathbf{w}$ in this space.
 
 ---
-
-# Perceptron
-
-.grid[
-.kol-1-2[
-- Start with $\mathbf{w}=0$.
-- For each training example $(\mathbf{x},y)$:
-    - Classify with current weights: $\hat{y} = \text{sign}(\mathbf{w}^T \mathbf{x})$
-    - If $y=\hat{y}$, do nothing.
-    - Otherwise, update parameters: $\mathbf{w} = \mathbf{w} + y\mathbf{x} - (1-y)\mathbf{x}$
-
-.center.width-70[![](figures/lec1/perceptron-update.png)]
-]
-.kol-1-2[.width-100[![](figures/lec1/perceptron-cartoon.png)]]
-]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
----
-
-class: middle
-
-
-
-## Multiclass perceptron
-
-.grid[
-.kol-2-3[
-
-- If we have more than $2$ classes, then
-    - Define a weight vector $\mathbf{w}\_c$ for each class $c$.
-    - The activation for class $c$ is $\mathbf{w}\_c^T \mathbf{x}$.
-- Learning:
-    - Start with $\mathbf{w}\_c=0$ for all $c$.
-    - For each training example $(\mathbf{x},y)$:
-        - Classify with current weights: $\hat{y} = \arg \max\_{c}\, \mathbf{w}\_c^T \mathbf{x}$
-        - If $y=\hat{y}$, do nothing.
-        - Otherwise, update parameters:
-            - $\mathbf{w}\_y = \mathbf{w}\_y + \mathbf{x}$ (raise score of right answer)
-            - $\mathbf{w}\\\_{\hat{y}} = \mathbf{w}\_{\hat{y}} - \mathbf{x}$ (lower score of wrong answer).
-
-
-]
-.kol-1-3[.center.width-100[![](figures/lec1/multiclass.png)]]
-]
-
----
-
-class: middle
-
-.center[
-<video controls preload="auto" height="500" width="700">
-  <source src="./figures/lec1/multiclass-perceptron.mp4" type="video/mp4">
-</video>]
-
-.footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
-
-
----
-
 # Apprenticeship
 
 Can we learn to play Pacman only from observations?
@@ -423,253 +384,240 @@ No more Minimax!
 
 ---
 
-class: middle
+class: center
 
-# Deep Learning
+# ML Tools: scikit-learn
 
-(a short introduction)
+![:scale 60%](figures/lec1/sklearn-docs.png)
+
+<a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
+
 
 ---
+class: center
 
-# Logistic regression
+# Representing Data
 
-An alternative model to the classification model based on the $\text{sign}$ function is to consider that $P(Y=1|\mathbf{x})$ varies smoothly with $\mathbf{x}$.
+![:scale 100%](figures/lec1/matrix-representation.png)
+---
+class: center
 
-**Logistic regression** models the conditional as
-$$P(Y=1|\mathbf{x}) = \sigma(\mathbf{w}^T \mathbf{x}+b),$$
-where the sigmoid activation function
-$\sigma(x) = \frac{1}{1 + \exp(-x)}$
-looks like a soft heavyside:
-.center.width-60[![](figures/lec1/activation-sigmoid.png)]
+# Training and Test Data
+
+![:scale 80%](figures/lec1/train-test-split.png)
+---
+class: center, middle
+
+# Notebook: Data Loading
+
+---
+class: center
+
+# Supervised ML Workflow
+
+![:scale 80%](figures/lec1/supervised-ml-workflow.png)
+---
+class: center
+
+# Supervised ML Workflow
+
+![:scale 100%](figures/lec1/supervised-ml-api.png)
+
+---
+class: center
+
+# Nearest Neighbors
+
+![:scale 40%](figures/lec1/knn_boundary_test_points.png)
+$$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
 
 ???
+Let’s say we have this two-class classification dataset here, with
+two features, one on the x axis and one on the y axis.
+And we have three new points as marked by the stars here.
+If I make a prediction using a one nearest neighbor classifier, what
+will it predict?
+It will predict the label of the closest data point in the training set.
+That is basically the simplest machine learning algorithm I can come
+up with.
 
-This model is core building block of deep neural networks!
-
+Here’s the formula:
+the prediction for a new x is the y_i so that x_i is the closest point
+in the training set.
+Ok, so now how do we find out whether this model is any good?
 ---
+class: center
 
-class: middle
+# Nearest Neighbors
 
-Following the principle of maximum likelihood estimation, we have
+![:scale 40%](figures/lec1/knn_boundary_k1.png)
 
-$$\begin{aligned}
-&\arg \max\_{\mathbf{w},b} P(\mathbf{d}|\mathbf{w},b) \\\\
-&= \arg \max\_{\mathbf{w},b} \prod\_{\mathbf{x}\_i, y\_i \in \mathbf{d}} P(Y=y\_i|\mathbf{x}\_i, \mathbf{w},b) \\\\
-&= \arg \max\_{\mathbf{w},b} \prod\_{\mathbf{x}\_i, y\_i \in \mathbf{d}} \sigma(\mathbf{w}^T \mathbf{x}\_i + b)^{y\_i}  (1-\sigma(\mathbf{w}^T \mathbf{x}\_i + b))^{1-y\_i}  \\\\
-&= \arg \min\_{\mathbf{w},b} \underbrace{\sum\_{\mathbf{x}\_i, y\_i \in \mathbf{d}} -{y\_i} \log\sigma(\mathbf{w}^T \mathbf{x}\_i + b) - {(1-y\_i)} \log (1-\sigma(\mathbf{w}^T \mathbf{x}\_i + b))}\_{\mathcal{L}(\mathbf{w}, b) = \sum\_i \ell(y\_i, \hat{y}(\mathbf{x}\_i; \mathbf{w}, b))}
-\end{aligned}$$
+$$f(x) = y_i, i = \text{argmin}_j || x_j - x||$$
 
-This loss is an instance of the **cross-entropy** $$H(p,q) = \mathbb{E}_p[-\log q]$$ for  $p=Y|\mathbf{x}\_i$ and $q=\hat{Y}|\mathbf{x}\_i$.
+???
+Let’s say we have this two-class classification dataset here, with
+two features, one on the x axis and one on the y axis.
+And we have three new points as marked by the stars here.
+If I make a prediction using a one nearest neighbor classifier, what
+will it predict?
+It will predict the label of the closest data point in the training set.
+That is basically the simplest machine learning algorithm you can think of.
 
+Here’s the formula:
+the prediction for a new x is the y_i so that x_i is the closest point
+in the training set.
+Ok, so now how do we find out whether this model and these predictions are any good?
 ---
+class: center
 
-# Gradient descent
+![:scale 60%](figures/lec1/train_test_set_2d_classification.png)
 
-Let $\mathcal{L}(\theta)$ denote a loss function defined over model parameters $\theta$ (e.g., $\mathbf{w}$ and $b$).
+???
+The simplest way is to split the data into a training and a test set.
+So we take some part of the data set,  let’s say 75% and the
+corresponding output, and train the model, and then apply the model on
+the remaining 25% to compute the accuracy. This test-set accuracy
+will provide an unbiased estimate of future performance.
+So if our i.i.d. assumption is correct, and we get a 90% success
+rate on the test data, we expect about a 90% success rate on any future
+data, for which we don't have labels.
 
-To minimize $\mathcal{L}(\theta)$, **gradient descent** uses local linear information to iteratively move towards a (local) minimum.
-
-For $\theta\_0 \in \mathbb{R}^d$, a first-order approximation around $\theta\_0$ can be defined as
-$$\hat{\mathcal{L}}(\epsilon; \theta\_0) = \mathcal{L}(\theta\_0) + \epsilon^T\nabla\_\theta \mathcal{L}(\theta\_0) + \frac{1}{2\gamma}||\epsilon||^2.$$
-
-.center.width-50[![](figures/lec1/gd-good-0.png)]
-
+Let's dive into how to build and evaluate this model with scikit-learn.
 ---
+# KNN with scikit-learn
 
-class: middle
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-A minimizer of the approximation $\hat{\mathcal{L}}(\epsilon; \theta\_0)$ is given for
-$$\begin{aligned}
-\nabla\_\epsilon \hat{\mathcal{L}}(\epsilon; \theta\_0) &= 0 \\\\
- &= \nabla\_\theta \mathcal{L}(\theta\_0) + \frac{1}{\gamma} \epsilon,
-\end{aligned}$$
-which results in the best improvement for the step $\epsilon = -\gamma \nabla\_\theta \mathcal{L}(\theta\_0)$.
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=1)
+knn.fit(X_train, y_train)
+print("accuracy: ", knn.score(X_test, y_test)))
+y_pred = knn.predict(X_test)
+```
+accuracy: 0.77
 
-Therefore, model parameters can be updated iteratively using the update rule
-$$\theta\_{t+1} = \theta\_t -\gamma \nabla\_\theta \mathcal{L}(\theta\_t),$$
-where
-- $\theta_0$ are the initial parameters of the model,
-- $\gamma$ is the learning rate.
+???
+We import train_test_split form model selection, which does a
+random split into 75%/25%.
+We provide it with the data X, which are our two features, and the
+labels y.
 
+As you might already know, all the models in scikit-learn are implemented
+in python classes, with a single object used to build and store the model.
+
+We start by importing our model, the KneighborsClassifier, and instantiate
+it with n_neighbors=1. Instantiating the object is when we set any hyper parameter,
+such as here saying that we only want to look at the neirest neighbor.
+
+Then we can call the fit method to build the model, here knn.fit(X_train,
+y_train)
+All models in scikit-learn have a fit-method, and all the supervised ones take
+the data X and the outcomes y. The fit method builds the model and stores any
+estimated quantities in the model object, here knn.  In the case of nearest
+neighbors, the `fit` methods simply remembers the whole training set.
+
+Then, we can use knn.score to make predictions on the test data, and
+compare them against the true labels y_test.
+
+For classification models, the score method will always compute
+accuracy.
+
+Just for illustration purposes, I also call the predict method here.
+The predict method is what's used to make predictions on any dataset.
+If we use the score method, it calls predict internally and then
+compares the outcome to the ground truth that's provided.
+
+Who here has not seen this before?
 ---
+class: center
 
+# Influence of Number of Neighbors
+
+![:scale 50%](figures/lec1/knn_boundary_k1.png)
+
+???
+So this was the predictions as made by one-nearest neighbor.
+But we can also consider more neighbors, for example three. Here is the
+three nearest neighbors for each of the points and the corresponding
+labels.
+We can then make a prediction by considering the majority among these
+three neighbors.
+And as you can see, in this case all the points changed their labels! (I
+was actually quite surprised when I saw that, I just picked some points
+at random).
+Clearly the number of neighbors that we consider matters a lot. But what
+is the right number?
+The is a problem you’ll encounter a lot in machine learning, the
+problem of tuning parameters of the model, also called hyper-parameters,
+which can not be learned directly from the data.
+---
+class: center
+
+# Influence of Number of Neighbors
+
+![:scale 50%](figures/lec1/knn_boundary_k3.png)
+
+???
+So this was the predictions as made by one-nearest neighbor.
+But we can also consider more neighbors, for example three. Here is the
+three nearest neighbors for each of the points and the corresponding
+labels.
+We can then make a prediction by considering the majority among these
+three neighbors.
+And as you can see, in this case all the points changed their labels! (I
+was actually quite surprised when I saw that, I just picked some points
+at random).
+Clearly the number of neighbors that we consider matters a lot. But what
+is the right number?
+The is a problem you’ll encounter a lot in machine learning, the
+problem of tuning parameters of the model, also called hyper-parameters,
+which can not be learned directly from the data.
+---
+class: center, some-space
+
+# Influence of n_neighbors
+
+![:scale 45%](figures/lec1/knn_boundary_varying_k.png)
+
+???
+Here’s an overview of how the classification changes if we consider
+different numbers of neighbors.
+You can see as red and blue circles the training data. And the background
+is colored according to which class a datapoint would be assigned to
+for each location.
+For one neighbor, you can see that each point in the training set has
+a little area around it that would be classified according to it’s
+label. This means all the training points would be classified correctly,
+but it leads to a very complex shape of the decision boundary.
+If we increase the number of neighbors, the boundary between red and
+blue simplifies, and with 40 neighbors we mostly end up with a line.
+This also means that now many of the training data points would be
+labeled incorrectly.
+---
+class: center, spacious
+
+# Model complexity
+
+![:scale 75%](figures/lec1/knn_model_complexity.png)
+
+???
+We can look at this in more detail by comparing training and test set
+scores for the different numbers of neighbors.
+Here, I did a random 75%/25% split again. This is a very noisy plot as
+the dataset is very small and I only did a random split, but you can
+see a trend here.
+You can see that for a single neighbor, the training score is 1 so perfect
+accuracy, but the test score is only 70%.  If we increase the number of
+neighbors we consider, the training score goes down, but the test score
+goes up, with an optimum at 19 and 21, but then both go down again.
+
+This is a very typical behavior, that I sketched in a schematic for you.
+---
 class: center, middle
 
-![](figures/lec1/gd-good-0.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-1.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-2.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-3.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-4.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-5.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-6.png)
-
----
-
-count: false
-class: center, middle
-
-![](figures/lec1/gd-good-7.png)
-
----
-
-# Layers
-
-So far we considered the logistic unit $h=\sigma\left(\mathbf{w}^T \mathbf{x} + b\right)$, where $h \in \mathbb{R}$, $\mathbf{x} \in \mathbb{R}^d$, $\mathbf{w} \in \mathbb{R}^d$ and $b \in \mathbb{R}$.
-
-These units can be composed *in parallel* to form a **layer** with $q$ outputs:
-$$\mathbf{h} = \sigma(\mathbf{W}^T \mathbf{x} + \mathbf{b})$$
-where  $\mathbf{h} \in \mathbb{R}^q$, $\mathbf{x} \in \mathbb{R}^d$, $\mathbf{W} \in \mathbb{R}^{d\times q}$, $b \in \mathbb{R}^d$ and where $\sigma(\cdot)$ is upgraded to the element-wise sigmoid function.
-
----
-
-# Multi-layer perceptron
-
-Similarly, layers can be composed *in series*, such that:
-$$\begin{aligned}
-\mathbf{h}\_0 &= \mathbf{x} \\\\
-\mathbf{h}\_1 &= \sigma(\mathbf{W}\_1^T \mathbf{h}\_0 + \mathbf{b}\_1) \\\\
-... \\\\
-\mathbf{h}\_L &= \sigma(\mathbf{W}\_L^T \mathbf{h}\_{L-1} + \mathbf{b}\_L) \\\\
-f(\mathbf{x}; \theta) &= \mathbf{h}\_L
-\end{aligned}$$
-where $\theta$ denotes the model parameters $\\{ \mathbf{W}\_k, \mathbf{b}\_k, ... | k=1, ..., L\\}$ and can be determined through gradient descent.
-
-- This model is the **multi-layer perceptron**, also known as the fully connected *feedforward network*.
-- Optionally, the last activation $\sigma$ can be skipped to produce unbounded output values $\hat{y} \in \mathbb{R}$.
-
----
-
-class: middle
-
-.width-100[![](figures/lec1/mlp.png)]
-
-.footnote[Credits: [PyTorch Deep Learning Minicourse](https://atcold.github.io/pytorch-Deep-Learning-Minicourse/), Alfredo Canziani, 2020.]
-
----
-
-# Convolutional networks
-
-Convolutional neural networks extend fully connected architectures with
-- convolutional layers: cross-correlation of the input through learnable kernels.
-- pooling layers: reduce the input dimension by pooling (e.g., averaging) clusters of input values.
-  
-These are specifically designed for processing **spatially structured** data (e.g., images, sequences) with known shift invariance.
-.center.width-110[![](figures/lec1/lenet.svg)]
-
----
-
-class: middle, black-slide
-
-.center[
-<iframe width="640" height="400" src="https://www.youtube.com/embed/zj_JlVqWK1M?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
-
-Deep neural networks learn a hierarchical composition of features.
-]
-
----
-
-class: middle, black-slide
-
-.center[
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/FwFduRA_L6Q?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
-
-]
-
-.center[LeNet-1, LeCun et al, 1993.]
-
----
-
-# Recurrent networks
-
-When the input is a sequence $\mathbf{x}\_{1:T}$, the feedforward network can be made **recurrent** by computing a sequence $\mathbf{h}\_{1:T}$ of hidden states, where $\mathbf{h}\_{t}$ is a function of both $\mathbf{x}\_{t}$ and the previous hidden states in the sequence.
-
-For example,
-$$\mathbf{h}\_{t} = \sigma(\mathbf{W}\_{xh}^T \mathbf{x} + \mathbf{W}\_{hh}^T \mathbf{h}\_{t-1} + \mathbf{b}),$$
-where $\mathbf{h}\_{t-1}$ is the previous hidden state in the sequence.
-
----
-
-class: middle
-
-Notice how this is similar to filtering and dynamic decision networks:
-- $\mathbf{h}\_t$ can be viewed as some current belief state;
-- $\mathbf{x}\_{1:T}$ is a sequence of observations;
-- $\mathbf{h}\_{t+1}$ is computed from the current belief state $\mathbf{h}\_t$ and the latest evidence $\mathbf{x}\_t$ through some fixed computation (in this case a neural network, instead of being inferred from the assumed dynamics).
-- $\mathbf{h}\_t$ can also be used to decide on some action, through another network $f$ such that $a\_t = f(\mathbf{h}\_t;\theta)$.
-
----
-
-class: middle, black-slide
-
-.center[
-<iframe width="640" height="400" src="https://www.youtube.com/embed/Ipi40cb_RsI?&loop=1&start=0" frameborder="0" volume="0" allowfullscreen></iframe>
-
-A recurrent network playing Mario Kart.
-]
-
----
-
-# Deep Learning as an architectural language
-
-<br>
-.center.circle.width-30[![](figures/lec1/lecun.jpg)]
-
-.italic[
-People are now building a new kind of software by .bold[assembling networks of parameterized functional blocks] and by .bold[training them from examples using some form of gradient-based optimization].
-]
-
-.pull-right[Yann LeCun, 2018.]
-
----
-
-class: middle
-
-.center[
-<video preload="auto" height="400" width="750" autoplay loop>
-  <source src="./figures/lec1/toolbox.mp4" type="video/mp4">
-</video>
-
-The toolbox
-]
-
-.footnote[Credits: [Oriol Vinyals](https://twitter.com/OriolVinyalsML/status/1212422497339105280), 2020.]
+# Notebook: Supervised Learning
 
 ---
 
@@ -858,3 +806,18 @@ count: false
 How do we do that?
 
 We have no clue! (mostly)
+
+---
+
+# Machine Learning Resources  
+<br/>
+.slide_left.width-110[![](figures/lec1/ML Resources.png)]
+---
+
+# Other Resources
+
+.center[
+![:scale 25%](figures/lec1/PDSH.png)&nbsp;&nbsp;&nbsp;
+![:scale 25%](figures/lec1/imlp.png)&nbsp;&nbsp;&nbsp;
+![:scale 25%](figures/lec1/esl.png)
+]
