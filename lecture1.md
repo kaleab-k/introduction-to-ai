@@ -848,7 +848,7 @@ We have no clue! (mostly)
 # Other Resources
 
 .center[
-![:scale 25%](figures/lec1/PDSH.png)&nbsp;&nbsp;&nbsp;
-![:scale 25%](figures/lec1/imlp.png)&nbsp;&nbsp;&nbsp;
-![:scale 25%](figures/lec1/esl.png)
+.center.width-30[![](figures/lec1/PDSH.png)]&nbsp;&nbsp;&nbsp;
+.center.width-30[![](figures/lec1/imlp.png)]&nbsp;&nbsp;&nbsp;
+.center.width-30[![](figures/lec1/esl.png)]
 ]
