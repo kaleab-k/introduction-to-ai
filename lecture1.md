@@ -240,6 +240,48 @@ class: middle
 
 ---
 
+class: center
+
+# ML Tools: scikit-learn
+
+![:scale 60%](figures/lec1/sklearn-docs.png)
+
+<a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
+
+---
+class: center
+
+# Representing Data
+
+![:scale 100%](figures/lec1/matrix-representation.png)
+---
+class: center
+
+# Training and Test Data
+
+![:scale 80%](figures/lec1/train-test-split.png)
+---
+class: center, middle
+
+# Notebook: Data Loading
+
+---
+class: center
+
+# Linear Models
+
+## For classification and regression.
+
+- Simple models, easy to understand and fast to train.
+
+- Linear models are easy to understand and fast to train.
+    - They are typically good baselines.
+
+We will cover intuitions on how they work in a machine learning 
+settings.
+
+---
+
 # Linear regression
 
 Let us first assume that $y \in \mathbb{R}$.
@@ -382,34 +424,7 @@ No more Minimax!
 
 .footnote[Image credits: [CS188](https://inst.eecs.berkeley.edu/~cs188/), UC Berkeley.]
 
----
-
-class: center
-
-# ML Tools: scikit-learn
-
-![:scale 60%](figures/lec1/sklearn-docs.png)
-
-<a href="http://scikit-learn.org/" style="color:black; font-size:50px; text-decoration:None" >scikit-learn.org</a>
-
----
-class: center
-
-# Representing Data
-
-![:scale 100%](figures/lec1/matrix-representation.png)
----
-class: center
-
-# Training and Test Data
-
-![:scale 80%](figures/lec1/train-test-split.png)
----
-class: center, middle
-
-# Notebook: Data Loading
-
----
+<!-- ---
 class: center
 
 # Supervised ML Workflow
@@ -466,6 +481,7 @@ Here’s the formula:
 the prediction for a new x is the y_i so that x_i is the closest point
 in the training set.
 Ok, so now how do we find out whether this model and these predictions are any good?
+
 ---
 class: center
 
@@ -482,6 +498,7 @@ rate on the test data, we expect about a 90% success rate on any future
 data, for which we don't have labels.
 
 Let's dive into how to build and evaluate this model with scikit-learn.
+
 ---
 # KNN with scikit-learn
 
@@ -529,6 +546,7 @@ If we use the score method, it calls predict internally and then
 compares the outcome to the ground truth that's provided.
 
 Who here has not seen this before?
+
 ---
 class: center
 
@@ -551,6 +569,7 @@ is the right number?
 The is a problem you’ll encounter a lot in machine learning, the
 problem of tuning parameters of the model, also called hyper-parameters,
 which can not be learned directly from the data.
+
 ---
 class: center
 
@@ -613,10 +632,11 @@ neighbors we consider, the training score goes down, but the test score
 goes up, with an optimum at 19 and 21, but then both go down again.
 
 This is a very typical behavior, that I sketched in a schematic for you.
+
 ---
 class: center, middle
 
-# Notebook: Supervised Learning
+# Notebook: Supervised Learning -->
 
 ---
 
@@ -806,7 +826,7 @@ We have no clue! (mostly)
 
 ---
 
-# Machine Learning Resources  
+<!-- # Machine Learning Resources  
 <br/>
 .slide_left.width-110[![](figures/lec1/ML Resources.png)]
 ---
@@ -817,4 +837,4 @@ We have no clue! (mostly)
 ![:scale 25%](figures/lec1/PDSH.png)&nbsp;&nbsp;&nbsp;
 ![:scale 25%](figures/lec1/imlp.png)&nbsp;&nbsp;&nbsp;
 ![:scale 25%](figures/lec1/esl.png)
-]
+] -->
