@@ -10,18 +10,13 @@ Kaleab A. Kinfu<br>
 ---
 
 # Today 
-Introduction to deep neural networks 
-- Deep Learning training
-- Forwardpropagation and backpropagation
-- Stochastic gradient descent
+- Introduction to neurons 
+- Introduction to deep neural networks 
+- Deep Learning training phases
 - Convolutional neural networks 
-
-Advanced deep neural networks for computer vision:
 - Classification
 - Object detection
 - Semantic segmentation
-
----
 
 ---
 
@@ -100,7 +95,6 @@ An artificial neuron is a mathematical function conceived as a model of biologic
 .slide_left.width-110[![](figures/lec2/DL_cost.png)]
 ---
 
----
 
 class: middle
 
@@ -134,36 +128,35 @@ The Perceptron
 <br/>
 .slide_left.width-110[![](figures/lec2/DL_MNIST_0.png)]
 ---
-
+class: middle, center, black-slide
 # DL Example: Digit Recognition
 <br/>
-.center.width-90[![](figures/lec2/3blue_1.gif)]
+.center.width-100[![](figures/lec2/3blue_1.gif)]
 
 ---
-
+class: middle, center, black-slide
 # DL Example: Digit Recognition
 <br/>
-.center.width-90[![](figures/lec2/3blue_2.gif)]
-
-
----
-
-# DL Example: Digit Recognition
-<br/>
-.center.width-90[![](figures/lec2/3blue_3.gif)]
+.center.width-100[![](figures/lec2/3blue_2.gif)]
 
 
 ---
-
+class: middle, center, black-slide
 # DL Example: Digit Recognition
 <br/>
-.center.width-90[![](figures/lec2/3blue_4.gif)]
+.center.width-100[![](figures/lec2/3blue_3.gif)]
 
 ---
-
+class: middle, center, black-slide
 # DL Example: Digit Recognition
 <br/>
-.center.width-90[![](figures/lec2/3blue_5.gif)]
+.center.width-100[![](figures/lec2/3blue_4.gif)]
+
+---
+class: middle, center, black-slide
+# DL Example: Digit Recognition
+<br/>
+.center.width-100[![](figures/lec2/3blue_5.gif)]
 
 ---
 
@@ -437,6 +430,7 @@ The simplest strategy to move from image classification to object detection is t
 .footnote[Credits: Francois Fleuret, [EE559 Deep Learning](https://fleuret.org/ee559/), EPFL.]
 
 --- 
+
 # YOLO
 
 .center.width-65[![](figures/lec2/yolo-model.png)]
