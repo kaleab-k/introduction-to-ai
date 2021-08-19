@@ -428,6 +428,7 @@ The simplest strategy to move from image classification to object detection is t
 .center.width-80[![](figures/lec2/sliding.gif)]
 
 .footnote[Credits: Francois Fleuret, [EE559 Deep Learning](https://fleuret.org/ee559/), EPFL.]
+---
 
 --- 
 
