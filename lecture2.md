@@ -233,6 +233,7 @@ class: center, middle, black-slide
 
 .width-100[![](figures/lec2/convnet.gif)]
 
+
 ---
 class: middle
 
@@ -504,9 +505,44 @@ produced them, or the training data, are generic and re-usable assets.]
 
 .footnote[Credits: Francois Fleuret, [EE559 Deep Learning](https://fleuret.org/ee559/), EPFL.]
 
+---
+
+class: middle, center, black-slide
+
+<iframe width="600" height="450" src="https://www.youtube.com/embed/Khuj4ASldmU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Artistic style transfer (Ruder et al, 2016)
+
+---
+
+class: middle, center, black-slide
+
+<iframe width="600" height="450" src="https://www.youtube.com/embed/kSLJriaOumA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Image generation (Karras et al, 2018)
+
+---
+
+class: middle
+
+.center.circle.width-30[![](figures/lec2/bishop.jpg)]
+
+.italic[For the last forty years we have programmed computers; for the next forty years we will train them.]
+
+.pull-right[Chris Bishop, 2020.]
+
+---
+
+class: middle, center
+
+.width-70[![](figures/lec2/turing-award.png)]
+
+.italic["ACM named .bold[Yoshua Bengio], .bold[Geoffrey Hinton], and .bold[Yann LeCun] recipients of the .bold[2018 ACM A.M. Turing Award] for conceptual and engineering breakthroughs that have made deep neural networks a critical component of computing."]
 
 
 ---
+
+
 
 class: middle
 
